@@ -1,0 +1,20 @@
+2022-05-30
+
+    need to figure out what the game plan will be here
+    
+    it looks like the course starts around ch 3 of spivak
+    need to be very conscious of the depth vs breadth balance 
+
+    might be helpful to make a more concrete schedule
+        where i want to be in a certain course by what date
+
+    so like the course is just a typical semester course
+        so imagine 2-3 lectures a week, plus engaging with practice problems on off days
+
+    39 (what im assuming are) hour long videos
+        2 / week = 19.5 weeks
+        3 / week = 13 weeks
+            ^ the only way to reasonably try to cover the material in a summer
+
+    so i think for week 0 (this week), try to get through part one of spivak
+        also ch1 of abbott

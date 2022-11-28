@@ -8,21 +8,31 @@ title: Resources for Learning Math
 
 This is a space that I'm dedicating to learning types of math that would be of benefit for
 the type of work that I'm doing / I'm interested in doing. I'd like to move toward a true
-mastery of statistics, probability, and modeling generally, and so the following course
-seems the most beneficial toward this aim.
+mastery of statistics, probability, and modeling generally. A concrete example of an
+objective I'd like to achieve is to be able to thoroughly understand something like
+Chapter 5 of [this](bates_mixed_models.pdf) text on mixed models.
 
 I'm making this directory public in the hopes that documenting my math adventures might be
 of benefit to others.
 
 ## Approach
 
+I anticipate this being a long road. The intention is to deeply learn the needed
+mathematical fundamentals to lay a solid foundation for grasping the more complex modeling
+topics.
+
 I see probability theory as being a foundation upon which the other types of math I'm
-interested rest, so my primary aim will be to start by trying to really grasp probability
+interested in rest, so my primary aim will be to start by trying to really grasp probability
 theory. I see the major prerequisites of probability theory being calculus and linear
 algebra. I'll start with calculus, move to linear algebra, then to probability theory and
 beyond.
 
-### Progress
+### Cirriculum
+
+**Step 0: Brush up on the basics**
+
+* Professor Leonard on YouTube
+    * See [notes](basics/leonard)
 
 **Step 1: Learn single variable calculus**
 

@@ -44,6 +44,8 @@ beyond.
 
 * [List of resources for single variable
     calculus](https://math.stackexchange.com/questions/901622/single-variable-calculus-reference-recommendations)
+    * [YouTube Lectures Calc 1 (Professor
+        Leonard)](https://www.youtube.com/watch?v=fYyARMqiaag&list=PLF797E961509B4EB5)
 * [Large list of free learning resources for math
     generally](https://www.reddit.com/r/math/comments/2mkmk0/a_compilation_of_useful_free_online_math_resources/)
 * [Open resources for various stat courses taught by one person (Jarad Niemi) at Iowa

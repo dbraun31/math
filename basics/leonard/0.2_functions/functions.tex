@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{amsfonts}
+
+\begin{document}
+
+\title{Lecture 0.2: Functions}
+\author{Professor Leonard}
+\maketitle
+
+This lecture is all about a review of functions.
+
+
+\section{Functions}
+The first big point he's making is that in order for something to be a function, each
+input $X$ needs to be associated with only one output $f(X)$.
+
+\subsection{Special Functions}
+
+Need to be careful with something like the following:
+
+\begin{align}
+    x^2 + y^2 = 25\\
+    y^2 = 25 - x^2\\
+    y = \pm \sqrt{25 - x^2}
+\end{align}
+
+This isn't a function because there can always be two values (plus or minus) that satisfy
+$y^2$.\\
+
+\subsubsection{Piecewise functions}
+
+One of the most common functions is the absolute value function, which is an example of a
+\emph{piecewise function}:
+
+\begin{equation}
+    \lvert x \rvert = 
+    \begin{cases}
+        x & \text{if } x \geq 0\\
+        -x & \text{if } x < 0
+    \end{cases}
+\end{equation}
+
+
+\end{document}
+

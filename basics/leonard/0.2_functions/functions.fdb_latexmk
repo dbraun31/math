@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1669596082 "functions.tex" "functions.pdf" "functions" 1669596083
+["pdflatex"] 1670023620 "functions.tex" "functions.pdf" "functions" 1670023620
   "/etc/texmf/web2c/texmf.cnf" 1653409262 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -34,6 +34,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1359763108 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
   "/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd" 1359763108 961 6518c6525a34feb5e8250ffa91731cff ""
@@ -59,8 +60,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1654081647 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1654081681 2801243 207d2c5a75b1282cb3d19b5edbc68cc5 ""
-  "functions.aux" 1669596083 356 c26c4be10dee080a8ba987ef4fd43931 "pdflatex"
-  "functions.tex" 1669596082 1031 5c2f188bc6118e6c01326d0d96690c50 ""
+  "functions.aux" 1670023620 470 2969dc63607ea5be2065768008270553 "pdflatex"
+  "functions.tex" 1670023619 1543 f4ab8f2d17d2d53fd1d227e378b3a39b ""
   (generated)
   "functions.aux"
   "functions.log"

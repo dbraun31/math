@@ -18,23 +18,23 @@ of benefit to others.
 ## Approach
 
 I anticipate this being a long road. The intention is to deeply learn the needed
-mathematical fundamentals to lay a solid foundation for grasping the more complex modeling
+mathematical fundamentals to lay a solid foundation for mastering the more complex modeling
 topics.
 
 I see probability theory as being a foundation upon which the other types of math I'm
-interested in rest, so my primary aim will be to start by trying to really grasp probability
+interested in rest, so my primary aim will be to start by trying to really master probability
 theory. I see the major prerequisites of probability theory being calculus and linear
 algebra. I'll start with calculus, move to linear algebra, then to probability theory and
 beyond.
 
 ### Cirriculum
 
-**Step 0: Brush up on the basics**
+**Phase 0: Brush up on the basics**
 
 * Professor Leonard on YouTube
     * See [notes](basics/leonard)
 
-**Step 1: Learn single variable calculus**
+**Phase 1: Study single variable calculus**
 
 * Get a foundation in real analysis
     * Work through Chapter 1 of Abbott's *Understanding Analysis*
@@ -43,11 +43,11 @@ beyond.
     variable
     calculus.](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/syllabus/)
 
-**Step 2: Learn multivariable calculus**
+**Phase 2: Study multivariable calculus**
 
-**Step 3: Learn linear algebra**
+**Phase 3: Study linear algebra**
 
-**Step 4: Learn probability theory**
+**Phase 4: Study probability theory**
 
 
 ## Links & Resources

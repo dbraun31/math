@@ -31,14 +31,13 @@ beyond.
 
 **Phase 0: Brush up on the basics**
 
-* Professor Leonard on YouTube
-    * See [notes](basics/leonard)
+* Professor Leonard on YouTube ([notes](basics/leonard))
 
 **Phase 1: Study single variable calculus**
 
 * Get a foundation in real analysis
     * Work through Chapter 1 of Abbott's *Understanding Analysis*
-        * See [notes](real-analysis/abbott_notes.pdf)
+        ([notes](real-analysis/))
 * Work through Spivak's *Calculus* concurrently with taking the MIT open course on [single
     variable
     calculus.](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/syllabus/)

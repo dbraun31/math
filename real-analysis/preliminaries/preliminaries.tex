@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{enumerate}
@@ -10,9 +11,9 @@
 \numberwithin{theo}{subsection}
 
 \begin{document}
-\title{Understanding Analysis - Chapter 1}
+\title{Understanding Analysis - Chapter 1 Notes}
 
-\author{Stephen Abbott}
+\author{Dave Braun}
 \maketitle
 
 \section{The Real Numbers}
@@ -686,11 +687,6 @@ Same logic for when $p < 0$.
             I plotted this out in R, and I think the answer to the first
             question is 'yes'. 
 
-            \begin{figure}[ht!]
-                \centering
-                \includegraphics[width=2.5in, scale=0.5]{exercise1-2-7.pdf}
-            \end{figure}
-
             $A \cap B = [1,2]$, $f([1,2])$ is roughly between 1 and 5, and so
            is the range of both $f(A)$ and $f(B)$. Well not $f(B)$, but it has
            the intersection with $f(A)$ that makes it work. And $f(A \cup B) =
@@ -702,6 +698,50 @@ Same logic for when $p < 0$.
            Had to look at solutions. The answer is to capitalize on the fact
            that the function is $f(x) = x^2$, by $A = [-4, 0],~B = [0,
            4],~f(A\cap B) = {0},~f(A) \cap f(B) = [0, 16]$.
+
+        \item Show that, for an arbitrary function $g: \mathbb{R} \rightarrow \mathbb{R}$,
+            it is always true that $g(A \cap B) \subseteq g(A) \cap g(B)$ for all sets $A,
+            B \subseteq \mathbb{R}$.
+
+            We need to show that $y \in g(A \cap B)$ implies $y
+            \in g(A) \cap g(B)$. This implies that there exists some $x \in A \cap B$
+            where $g(x) = y$. This means that $x \in A$ and $x \in B$. This implies that
+            $g(x) \in g(A)$ and $g(x) \in g(B)$. Which means that $g(x) = y \in g(A) \cap
+            g(B)$.
+
+        \item Form and prove a conjecture about the relationship between $g(A \cup B)$ and
+            $g(A) \cup g(B)$ for an arbitraty function $g$.
+
+            Given some arbitrary function $g: \mathbb{R} \rightarrow \mathbb{R}$, I
+            conjecture that $g(A \cup B) \in g(A) \cup g(B)$.\\
+
+            This means that there must be some $x \in A \cup B$ where $g(x) = y$.\\
+
+            So $y \in g(A)$ or $y \in g(B)$. Okay I give up.\\
+
+            I think I was on the right track. The solution:\\
+
+            The conjecture is that $g(A \cup B) = g(A) \cup g(B)$. This must be proven in
+            both directions. Ie that:
+
+            \begin{align}
+                g(A \cup B) \subseteq g(A) \cup g(B) \\
+                g(A) \cup g(B) \subseteq g(A \cup B)
+            \end{align}
+
+            To prove the first way, we propose some $y \in g(A \cup B)$ and show that $y
+            \in g(A)$ or $y \in g(B)$. If $y \in g(A \cup B)$ then there exists some $x
+            \in A \cup B$ where $g(x) = y$. This means that $x \in A$ or $x \in B$, which
+            means that $g(x) \in g(A)$ or $g(x) \in g(B)$. Therefore, $g(x) = y \in g(A)
+            \cup g(B)$.
+            
+            To prove the second way, we propose some $y \in g(A) \cup g(B)$ and show that
+            $y \in g(A \cup B)$. That means that $y \in g(A)$ or $y \in g(B)$, and we can
+            propose some element $x \in A \cup B$ where $g(x) = y$. Therefore, $g(x) = y
+            \in g(A) \cup g(B)$ and $x \in A \cup B$, so $g(A \cup B) \subseteq g(A) \cup
+            g(B)$.
+
+
 
         \end{enumerate}
 

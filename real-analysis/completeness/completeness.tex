@@ -11,6 +11,7 @@
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}
 \newtheorem{example}{Example}
+\newtheorem{lemma}{Lemma}
 
 \begin{document}
 
@@ -120,6 +121,169 @@ set.
 
 \end{example}
 
-Left off around p. 17.
+\begin{example}
+    Consider the set:
+    $$
+    S = \{r \in Q: r^2 < 2 \}
+    $$
+    There are plenty of possible upper bounds, anything $b \geq 2$ will do. But we can't
+    find a least upper bound where $b \in Q$, because the least upper bound should be $r =
+    \sqrt{2}$, which is irrational. 
+
+\end{example}
+
+\begin{example}
+    Let $A \subseteq \mathbb{R}$ be nonempty and bounded above, and let $c \in
+    \mathbb{R}$. Define the set $c + A$ by
+
+    $$
+    c + A = \{ c + a: a \in A \}
+    $$
+    Then $\text{sup}(c + A) = c + \text{sup}A$.\\
+
+    Need to verify the two aspects of least upper bound definition, namely that $s$ is an
+    upper bound for $A$, and that if $b$ is any upper bound for $A$, then $s \leq b$.\\
+
+    (Not looking at the explanation). I guess we need to show that $c + \text{sup}A$
+    qualifies as an upper bound of $c + A$. So $c + \text{sup}A \geq a + c$ for all $a \in
+    A$. I can propose some $s = \text{sup}A$, such that $s \geq a$ for all $a \in A$,
+    meaning it's necessarily true that $s + c \geq a + c$. I think that proves the first
+    component of the definition. \\
+
+    Next is to show that for any $b \geq A + c$ that $s \leq b$. (looking at explanation)
+    then $b - c \geq A$, so $b-c$ is an upper bound on $A$. Because $s$ is the least upper
+    bound, we can write $s \leq b - c$, which can be rewritten as $s + c \leq b$, thus
+    proving part two.
+
+\end{example}
+
+\begin{lemma} 
+    Assume $s \in \mathbb{R}$ is an upper bound for a set $A \subseteq \mathbb{R}$. Then,
+    $s = \text{sup}~A$ if and only if, for every choice of $\epsilon > 0$, there exists an
+    element $a \in A$ satisfying $s - \epsilon < a$.
+
+    \begin{proof}
+       The idea is given that $s$ is an upper bound on set $A$, it is the least upper
+       bound if and only if any number less than $s$ is in set $A$ and is not an upper
+       bound.\\
+
+       Prove it forwards, meaning that if $s = \text{sup}~A$ then for some arbitrarily
+       chosen $\epsilon > 0$, there should be some $a \in A$ where $s - \epsilon < a$. We
+       can note how $s - a < s$, and if $s = \text{sup}~A$, then anything less than $s$ is
+       not an upper bound, and there should be some $a \in A$ where $a > s - \epsilon$
+       (because otherwise $s - \epsilon$ would be an upper bound).
+
+       Proving it backwards. Which means that if there exists some $a \in A$ which, for every
+       choice $\epsilon > 0$, satisfies $s - \epsilon < a$, then $s = \text{sup}~A$. I can
+       observe that $s < a + \epsilon$.\\
+
+       (Their solution). Assume $s$ is an upper bound with the property that no matter how
+       $\epsilon > 0$ is chosen, $s - \epsilon$ is no longer an upper bound for $A$.
+       Notice that what this implies is that if $b$ is any number less than $s$, then $b$
+       is not an upper bound. (Just let $\epsilon = s - b$). To prove that $s =
+       \text{sup}~A$, we must verify part (ii) of the definition (which is that if $b$ is
+       any upper bound, that $s \leq b$.) Because we have just argued that any number
+       smaller than $s$ cannot be an upper bound, it follows that if $b$ is some other
+       upper bound for $A$, then $s \leq b$.\\
+
+       Struggling to follow this one, but okay.
+
+    \end{proof}
+\end{lemma}
+
+\subsubsection*{Exercises}
+
+\begin{enumerate}
+    \item
+    \begin{enumerate}
+        \item Write a formal definition in the style of Definition 1.3.2 for the
+            \emph{infimum} or \emph{greatest lower bound} of a set.\\
+
+        \begin{definition}
+            $i$ is the greatest upper bound of set $A \subseteq \mathbb{R}$ if:\\
+            \begin{enumerate}
+                \item $i$ is a lower bound on set $A$\\
+                \item For any other lower bound $b$ on set $A$, $i \geq b$.
+            \end{enumerate}
+        \end{definition}
+
+        \item Now, state and prove a version of Lemma 1.3.8 for greatest lower bounds.
+            \begin{lemma}
+                Assume $i \in \mathbb{R}$ is a lower bound on set $A \subseteq \mathbb{R}$. $i =
+                \text{inf}~A$ if and only if for every choice of $\epsilon > 0$, $i +
+                \epsilon \geq a$ for some $a \in A$.
+                \begin{proof}
+                    Okay so let's prove it forwards. Which is to say if $i =
+                    \text{inf}~A$, then for every $\epsilon > 0$, $i + \epsilon \geq a$
+                    for some  $a \in A$. If $i = \text{inf}~A$, then $i + a > i$. Since
+                    any number plus $i$ can't be a lower bound if $i$ is the greatest
+                    lower bound, then we know that if any number is added to $i$ it will
+                    no longer be a lower bound and there should be some $a \in A$ where $i
+                    + \epsilon \geq a$.\\
+
+                    Proving it backwards. Assume $i \in \mathbb{R}$ is a lower bound on
+                    set $A \subseteq \mathbb{R}$. If for every choice of $\epsilon > 0$,
+                    $i + \epsilon \geq a$ for some $a \in A$, then $i = \text{inf}~A$.
+                    Intuitively, it's clear that, if $i$ is a lower bound, and any nudge
+                    in the positive direction causes $i$ to no longer be a lower bound,
+                    then $i$ must be the greatest lower bound. I can also propose an
+                    arbitrary lower bound $b$. Part (ii) of the definition requires that
+                    $i \geq b$. Then I guess this is self evident because anything greater
+                    than $i$ would no longer be a lower bound... ? But I struggle with
+                    that step because $i = \text{inf}~A$ is the conclusion we're trying to
+                    prove here, but the solution kind of relies on that as a premise to
+                    support the claim $i \geq b$. Puzzling.
+                    
+                \end{proof}
+            \end{lemma}
+
+    \end{enumerate}
+    \item Give an example of each of the following, or state that the request is
+        impossible.\\
+        \begin{enumerate}
+            \item A set $B$ with $\text{inf}~B \geq \text{sup}~B$.\\
+                I think the only thing that satisfies this is a set with one element (eg,
+                $B = \{3\}$. Such that $\text{inf}~B = 3 = \text{sup}~B$.
+
+            \item A finite set that contains its infimum but not its supremum.\\
+
+                Hmmm. Maybe a set with one closed interval and one open? $A = [0, 4)$.\\
+
+                Okay the answer is that this is impossible because finite sets contain
+                their upper and lower bounds.
+
+            \item A bounded subset of $Q$ that contains its supremum but not its
+                infimum.\\
+
+                My intuition is to answer this one similarly to the last, which suggests
+                that it's probably wrong. The only question is whether the set with an
+                open interval is technically rational or not, because you can't really
+                pick out a number on the rational number line to end the set. \\
+
+                Let $B = \{r \in Q | 1 < r \leq 2\}$ we have $\text{inf}~B = 1 \notin B$
+                and $\text{sup}~B = 2 \in B$.
+
+        \end{enumerate}
+
+    \item 
+        \begin{enumerate}
+            \item Let $A$ be nonempty and bounded below, and define $B = \{b \in R: b
+                \text{is a lower bound for} A\}$. Show that $\text{sup}~B =
+                \text{inf}~A$.\\
+
+                I'm struggling with this one because in order for $\text{sup}~B =
+                \text{inf}~A$ we'd need to show that $A$ and $B$ perfectly overlap at
+                their upper and lower bounds, and I can't see that from the definitions.
+
+                The solution just appeals to the definition and says it's self evident.
+                But all we know is that some element of $B$, $b$, is a lower bound of $A$.
+                We could have $A \cap B \neq \emptyset$ meaning that $\text{sup}~B >
+                \text{inf}~A$. Or $A \cap B = \emptyset$ such that $\text{sup}~B <
+                    \text{inf}~A$. I reject the question.
+
+        \end{enumerate}
+
+\end{enumerate}
+
 
 \end{document}

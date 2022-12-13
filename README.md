@@ -65,3 +65,6 @@ beyond.
 * [Long thread on approaches to learning
     math](https://www.reddit.com/r/learnmath/comments/bbza6p/what_is_the_best_way_to_teach_myself_math/)
 * [r/learnmath](https://reddit.com/r/learnmath)
+* [Adventures in Mathematics](http://andrusia.com/math/)  
+    * Came recommended from
+        [this](https://www.thegreatstatsby.com/posts/2021-03-08-ml-prospect/) stats blog.

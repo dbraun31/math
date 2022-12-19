@@ -71,3 +71,5 @@ beyond.
 * [A good discussion of Jaynes vs.
     Kolomogorov](https://www.cantorsparadise.com/the-two-schools-of-probability-theory-76d0c0c8198d)
 * [Huge repository of math lectures](https://www.youtube.com/@wcwou/videos)
+* [Annotated bibliography of math textbooks from
+    Berkeley](https://www.ocf.berkeley.edu/~abhishek/chicmath.htm#e%3acalculus)

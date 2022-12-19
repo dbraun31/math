@@ -12,6 +12,7 @@
 \newtheorem{definition}{Definition}
 \newtheorem{example}{Example}
 \newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
 
 \begin{document}
 
@@ -281,9 +282,58 @@ set.
                 \text{inf}~A$. Or $A \cap B = \emptyset$ such that $\text{sup}~B <
                     \text{inf}~A$. I reject the question.
 
+            \item Use (a) to explain why there is no need to assert that greatest lower
+                bounds exist as part of the Axiom of Completeness.
+
+                It seems like it should just be the inverse of the definition. Every non
+                empty set of real numbers that is bounded below has a greatest lower
+                bound. Even some set set $A \subseteq (3, 5]$, the greatest lower bound is
+                is irrational but is still a real number.
+
         \end{enumerate}
+            \item Let $A_1, A_2, A_3, \ldots$ be a collection of nonempty sets, each of
+                which is bounded above.
+        \begin{enumerate}
+            \item Find a formula for $\text{sup}~(A_1 \cup A_2)$. Extend this to
+                $\text{sup}~(\bigcup_{k=1}^n A_k)$.
+
+            \begin{align*}
+                \text{sup}~(A_1 \cup A_2) = \text{max}(\text{sup}(A_1),~\text{sup}(A_2))\\
+                \text{sup}~\left(\bigcup_{k=1}^n A_k\right) = \text{sup}~\{\text{sup}~A_k | k = 1,
+                \ldots, n \}
+            \end{align*}
+
+        \item Consider $\text{sup}(\bigcup_{k=1}^{\infty} A_k)$. Does the formula in (a)
+            extend to the infinite case?
+
+            No, because set $\bigcup_{k=1}^{\infty} A_k$ might be unbounded, for example
+            with $A_n = [n, n+1]$.
+
+        \end{enumerate}
+
+        Skipping ahead.
 
 \end{enumerate}
 
+\subsection{Consequences of Completeness}
+
+\begin{theorem} \textbf{(Nested Interval Property)}. For each $n \in N$, assume we are
+    given a closed interval $I_n = [a_n, b_n] = \{x \in \mathbb{R} : a_n \leq x \leq b_n
+    \}$. Assume also that each $I_n$ contains $I_{n+1}$. Then, the resulting nested
+    sequence of closed intervals
+    \begin{equation*}
+        I_1 \supseteq I_2 \supseteq I_3 \supseteq I_4 \supseteq \ldots
+    \end{equation*}
+    has a nonempty intersection; that is, $\bigcap_{n=1}^{\infty} I_n \neq \emptyset$.
+
+    In human terms. You start with some interval $I_n = [a_n, b_n]$ in which there is some
+    element $x$. Now you propose infinite subset intervals of $I_n$ just like closing in
+    on themselves. The idea is to show that, even in those infinitely closing intervals,
+    there is some $a_n \leq x \leq b_n$ such that there exists some intersection of all of
+    those intervals $\bigcap_{k=1}^{\infty} I_n \neq \emptyset$.
+
+\end{theorem}
 
 \end{document}
+
+

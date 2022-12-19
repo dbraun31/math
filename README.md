@@ -70,3 +70,4 @@ beyond.
         [this](https://www.thegreatstatsby.com/posts/2021-03-08-ml-prospect/) stats blog.
 * [A good discussion of Jaynes vs.
     Kolomogorov](https://www.cantorsparadise.com/the-two-schools-of-probability-theory-76d0c0c8198d)
+* [Huge repository of math lectures](https://www.youtube.com/@wcwou/videos)

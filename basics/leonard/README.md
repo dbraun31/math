@@ -1,3 +1,7 @@
+---
+title: Math with Professor Leonard
+---
+
 # Professor Leonard
 
 Professor Leonard is a pretty awesome dude who explains math things really well on
@@ -16,5 +20,5 @@ linked below:
     [notes](0.2_functions/functions.pdf)).
 * Lecture 0.3: Review of Trigonometry and Graphing Trigonometric Functions
     ([video](https://www.youtube.com/watch?v=SzLF-wLZF_I&list=PLF797E961509B4EB5&index=3),
-    [notes](0.3_trig-graphing/trig-graphing.tex))
+    [notes](0.3_trig-graphing/trig-graphing.pdf))
 

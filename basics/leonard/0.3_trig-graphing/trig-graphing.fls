@@ -229,6 +229,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 OUTPUT trig-graphing.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT ./Unit-circle.png
+INPUT ./Unit-circle.png
+INPUT Unit-circle.png
+INPUT ./Unit-circle.png
+INPUT ./Unit-circle.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT ./fig1.pdf
 INPUT ./fig1.pdf

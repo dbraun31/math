@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.6.1)  22 DEC 2022 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.6.1)  5 JAN 2023 12:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -164,60 +164,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--47
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 72--74
+<Unit-circle.png, id=14, 1982.40625pt x 1841.88126pt>
+File: Unit-circle.png Graphic file (type png)
+<use Unit-circle.png>
+Package pdftex.def Info: Unit-circle.png  used on input line 62.
+(pdftex.def)             Requested size: 198.25223pt x 184.19891pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
+
+ []
+
+[2 <./Unit-circle.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--84
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
+Underfull \hbox (badness 10000) in paragraph at lines 99--103
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--95
-
- []
-
-[2]
-<fig1.pdf, id=18, 361.35pt x 216.81pt>
+<fig1.pdf, id=20, 361.35pt x 216.81pt>
 File: fig1.pdf Graphic file (type pdf)
 <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf  used on input line 112.
+Package pdftex.def Info: fig1.pdf  used on input line 120.
 (pdftex.def)             Requested size: 361.34912pt x 216.80946pt.
 
-Overfull \hbox (31.34912pt too wide) in paragraph at lines 112--113
+Overfull \hbox (31.34912pt too wide) in paragraph at lines 120--121
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
 
  []
 
-[3 <./fig1.pdf>] (./trig-graphing.aux) ) 
+
+Overfull \hbox (2.99904pt too wide) in paragraph at lines 152--154
+\OML/cmm/m/it/10 tan \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 sin=cos$\OT1/cmr/m/n/10 ). Half an-gle and dou-ble an-gle for-mu-las ($\OML/cmm/m/it/10 sin\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) = 2\OML/cmm/m/it/10 sin\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 cos\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$). 
+ []
+
+[4 <./fig1.pdf>] [5] (./trig-graphing.aux) ) 
 Here is how much of TeX's memory you used:
- 2130 strings out of 478287
- 32841 string characters out of 5849290
- 329180 words of memory out of 5000000
- 20325 multiletter control sequences out of 15000+600000
+ 2138 strings out of 478287
+ 32981 string characters out of 5849290
+ 328180 words of memory out of 5000000
+ 20331 multiletter control sequences out of 15000+600000
  477468 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,10n,62p,231b,225s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on trig-graphing.pdf (3 pages, 269102 bytes).
+Output written on trig-graphing.pdf (5 pages, 361943 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

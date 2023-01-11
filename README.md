@@ -73,3 +73,7 @@ beyond.
 * [Huge repository of math lectures](https://www.youtube.com/@wcwou/videos)
 * [Annotated bibliography of math textbooks from
     Berkeley](https://www.ocf.berkeley.edu/~abhishek/chicmath.htm#e%3acalculus)
+* [Course on regression grounded in mathematical concepts like PDFs and
+    likelihood functions](https://www.stat.cmu.edu/~cshalizi/mreg/15/)
+    * See especially [here](https://www.stat.cmu.edu/~cshalizi/mreg/15/lectures/04/lecture-04.pdf) for a deriva*tion of a likelihood function of
+        a simple regression equation.

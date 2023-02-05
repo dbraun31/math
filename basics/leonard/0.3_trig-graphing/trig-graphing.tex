@@ -152,5 +152,47 @@ You'll shift to the left by $\pi/4$.
 In closing, he's saying you'll need to know trig identites (eg, $sin^2 + cos^2 = 1$, $tan
 = sin/cos$). Half angle and double angle formulas ($sin(2x) = 2sin(x)cos(x)$). 
 
+\section{Combining and Compoisition of Functions}
+
+This is a separate video but it's only 15 min so I'm tacking it on here.
+
+We can add, subtract, multiply and divide functions.
+
+Example:
+
+\begin{align*}
+    f(x) = 1 + \sqrt{x - 2}\\
+    g(x) = x - 3
+\end{align*}
+
+$(f + g)(x) = f(x) + g(x) \rightarrow 1 + (\sqrt{x - 2}) + (x - 3)$. \\
+
+Et cetera for the other types of operations. Beware of domain restrictions that arise
+because of division. \\
+
+The domain of the resulting combined function is the intersection of the two previous
+functions. Meaning any restrictions that apply to original functions apply to the
+resulting function. You can't ever make a domain problem better by combining functions.
+
+\subsection{Compositions}
+
+Nesting functions inside functions.
+
+\begin{align*}
+    f(x) = x^3 - 4\\
+    g(x) = \sqrt{x}\\
+    (fg)(x) = f(g(x)) = f(\sqrt{x}) = (\sqrt{x})^3 - 4\\
+    (gf)(x) = g(f(x)) = g(x^3 - 4) = \sqrt{x^3 - 4}
+\end{align*}
+
+Can expand to more than two functions:
+
+\begin{align*}
+    f(x) = \sqrt{x}\\
+    g(x) = \frac{1}{x}\\
+    h(x) = x^3\\
+    f(g(h(x))) = f(\frac{1}{x^3}) = \sqrt{\frac{1}{x^3}}
+\end{align*}
+
 \end{document}
 

@@ -21,4 +21,5 @@ linked below:
 * Lecture 0.3: Review of Trigonometry and Graphing Trigonometric Functions
     ([video](https://www.youtube.com/watch?v=SzLF-wLZF_I&list=PLF797E961509B4EB5&index=3),
     [notes](0.3_trig-graphing/trig-graphing.pdf))
-
+* Lecture 1.1: An Introduction to Limits
+    ([video](https://www.youtube.com/watch?v=54_XRjHhZzI), [notes](1.1_limits/limits.pdf))

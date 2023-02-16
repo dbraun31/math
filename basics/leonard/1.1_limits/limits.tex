@@ -110,8 +110,51 @@ For function $f(x) = x^2$, can we find the tangent line at $(1, 1)$?
     \label{fig:tangent}
 \end{figure}
 
-Left off at 36:16.
+\subsection{The area problem}
 
+The other big calculus idea is finding the area under a curve. The basic idea is that
+you're drawing many many tiny rectangles in that space under the curve, then taking the
+area of the rectangles. As the number of rectangles approaches infinity, the approximation
+of area under the curve approaches perfection.
+
+\subsection{Back to limits}
+
+A \emph{limit} tells you what a function does as the variable approaches a specific
+value.\\
+
+\emph{Example.} For $f(x) = x^2$, what happens as $x \rightarrow 2$?\\
+
+The way he's working through this is to put a table on the board mapping $x$ to $x^2$ for
+values approaching $2$ on both the high and low ends. The function has to approach the
+same value from both the left and the right for the limit to exist. Write a limit like:
+$\lim_{x\to 2} x^2 = 4$. We actually don't care about what happens when $x$ \emph{gets} to
+that number.
+
+$$
+\lim_{x\to a} f(x) = L
+$$
+
+To talk about a limit coming from the right hand side: $\lim_{x\to a^+} f(x) = L$. Add
+negative sign for from the left. These quantities can be pretty different depending if
+there's a big discontinuity in the function around the limit. \\
+
+\emph{Note:} In order from a limit to exist at a point, you must have $\lim_{x \to a^-}
+f(x) = \lim_{x \to a^+} f(x).$ This suggests that if you have a limit around a big
+discontinuity, that there is no limit "at a point". Ah, so this plus / minus notation is
+specific to finding the limit coming from a certain side. Without the sign, it's like the
+general limit and, if it converges at a point, it'll have a single solution. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{zero_limit.pdf}
+    \caption{$\lim_{x \to 0}f(x)$}
+    \label{fig:zero-limit}
+\end{figure}
+
+
+The limit is $\infty$ !!!\\
+
+Left off at 1:20:54
 
 \end{document}
 

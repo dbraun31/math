@@ -81,7 +81,7 @@ d %>%
 
 ggsave('tangent.pdf', height = 3.5, width = 3.5)
 
-
+## i used to have code here plotting the function 1/x but i didnt save it whoops
 
 
 

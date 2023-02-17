@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{amsfonts}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\title{Lecture 1.2: Limit Properties. Techniques of Limit Computation}
+\author{Professor Leonard}
+\maketitle
+
+\section{Basics}
+
+\begin{enumerate}
+    \item \textbf{Limit of a constant}
+$$
+\lim_{x \to a} C = C
+$$
+The limit of a constant is always the constant (think because the plot is just a
+horizontal line).
+
+    \item \textbf{Limit of $x$}
+        $$
+        \lim_{x\to a} x = a
+        $$
+        Think because $f(x) = x$ is just identity, so point $a$ on $x$ is also $a$ on $y$.
+
+    \item \textbf{Zero limit}
+        \begin{align*}
+            \lim_{x\to 0^-} \frac{1}{x}= -\infty\\
+            \lim_{x\to 0^+} \frac{1}{x} = \infty
+        \end{align*}
+
+\end{enumerate}
+
+\section{Properties}
+
+Given two functions with limits that exist:
+\begin{align*}
+    \lim{x\to a}f(x) = L_1\\
+    \lim{x\to a} g(x) = L_2
+\end{align*}
+
+\begin{enumerate}
+    \item \textbf{Function joining and separation}
+        $$
+        \lim_{x\to a} [f(x) \pm g(x)] = \lim_{x\to a}f(x) \pm \lim_{x\to a}g(x)
+        $$
+        This operation works both ways (can also join).
+
+    \item \textbf{Same thing for multiplication}
+        $$
+        \lim_{x\to a} [f(x) \cdot g(x)] = \lim_{x\to a}f(x) \cdot \lim_{x\to a}g(x)
+        $$
+    \item \textbf{For division}
+        $$
+        \lim_{x\to a} \left[ \frac{f(x)}{g(x)} \right] = \frac{\lim_{x\to
+        a}f(x)}{\lim_{x\to a}g(x)}, \lim_{x\to a}g(x) \neq 0
+        $$
+
+    \item \textbf{Exponents}
+        $$
+        \lim_{x\to a}[f(x)]^n = \left[\lim_{x\to a} f(x) \right]^n \rightarrow \lim_{x\to
+        a} \sqrt[n]{f(x)} \rightarrow \sqrt[n]{\lim_{x\to a}f(x)}
+        $$
+
+
+\end{enumerate}
+
+\end{document}

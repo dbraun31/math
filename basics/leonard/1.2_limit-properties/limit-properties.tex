@@ -67,6 +67,67 @@ Given two functions with limits that exist:
         \lim_{x\to a}[f(x)]^n = \left[\lim_{x\to a} f(x) \right]^n \rightarrow \lim_{x\to
         a} \sqrt[n]{f(x)} \rightarrow \sqrt[n]{\lim_{x\to a}f(x)}
         $$
+\subsection{Example}
+
+\begin{align*}
+    \lim_{x \to 2} (x^3 - 2x + 7) &\rightarrow \lim_{x \to 2} x^3 - \lim_{x \to 2} 2x +
+\lim_{x\to 2} 7\\
+                                  &\rightarrow \left[ \lim_{x \to 2} x \right]^3 - \left(
+                                  \lim_{x\to 2} 2\right) \cdot \left( \lim_{x\to 2} x
+                              \right) + \lim_{x\to 2} 7\\
+                                  & \rightarrow 2^3 - 2 \cdot 2 + 7\\
+                                  & \rightarrow 11\\
+    f(2) &= 11
+\end{align*}
+
+For any polynomial, all you need to do is plug the value at the limit as the variable in
+order to determine the limit. The general case for any $P$ polynomial:
+
+$$
+\lim_{x \to a}P(x) = P(a)
+$$
+
+\subsection{Holes and asymptotes}
+
+\subsubsection{Holes}
+$$
+\lim_{x\to 2} \frac{x^2 - 4}{x-2}
+$$
+
+With limits, because you're not actually reaching the point at the limit, it's okay to
+simplify out a domain problem. So:
+
+\begin{align*}
+    \lim_{x\to 2} &\frac{x^2 -4}{x-2}\\
+                  & \frac{(x+2)(x-2)}{x-2}\\
+                  & x+2\\
+    \lim_{x\to 2} &= 4
+\end{align*}
+
+If the domain issue can simplify, it's a hole in the graph. If it can't, then it's some
+type of asymptote. If a fraction reduces to zero over zero, I think he's saying that means
+it can be factored.
+
+\subsubsection{Asymptotes}
+
+\begin{align*}
+    \lim_{x \to 5} \frac{x^3 - 3x - 10}{x^2 - 10x + 25}\\
+    \lim_{x \to 5} \frac{(x-5)(x+2)}{(x-5)(x-5)}\\
+    \lim_{x \to 5} \frac{x+2}{x-5}
+\end{align*}
+
+We have ourselves a vertical asymptote.
+
+\textbf{Sign analysis test}\\
+
+To determine the direction of the asymptotes in both directions, we need to construct a
+number line between the two values that will make the numerator and denominator equal to
+zero (here $-2$ and $5$). Sample on both sides of the limit, plug into the function, and
+determine the sign on both sides.
+
+
+    
+Left off at 47:38.
 
 
 \end{enumerate}

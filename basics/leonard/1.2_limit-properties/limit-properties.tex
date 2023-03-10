@@ -118,7 +118,7 @@ it can be factored.
 
 We have ourselves a vertical asymptote.
 
-\textbf{Sign analysis test}\\
+\textbf{Sign analysis test}
 
 To determine the direction of the asymptotes in both directions, we need to construct a
 number line between the two values that will make the numerator and denominator equal to
@@ -126,9 +126,44 @@ zero (here $-2$ and $5$). Sample on both sides of the limit, plug into the funct
 determine the sign on both sides.
 
 
-    
-Left off at 47:38.
+\textbf{Example.}
 
+\begin{align}
+    \lim_{x \to 1} \frac{x-1}{\sqrt{x} - 1}\\
+    \lim_{x \to 1} \frac{x-1}{\sqrt{x} - 1} \cdot \frac{\sqrt{x} + 1}{\sqrt{x} + 1}\\
+    \lim_{x \to 1} \frac{(x - 1)(\sqrt{x} + 1)}{x - 1}\\
+    \lim_{x \to 1} \sqrt{x} + 1\\
+    \lim{x \to 1} \sqrt{1} + 1 = 2
+\end{align}
+
+The logic behind (2) is to multiply by the \emph{conjugate}, since you can't necessarily
+factor anything. 
+
+The trick to get the denominator in step (3) is:
+
+\begin{align*}
+    (\sqrt{x} - 1) \cdot (\sqrt{x} + 1)\\
+    \sqrt{x} \cdot \sqrt{x} + \sqrt{x} - \sqrt{x} - 1\\
+    x - 1
+\end{align*}
+
+Forget what the formal name of that is... but it's the same way you'd distribute one term
+into another to get a classic polynomial. Been a minute. Yea so conjugate is the term you
+multiply another term by to get that middle term to cancel. Eg, the conjugate of $p-q$ is
+$p+q$.
+
+\textbf{Another example.}
+
+\begin{align*}
+    \lim_{x \to 0} \frac{\sqrt{1 + x} - 1}{x}\\
+    \lim_{x\to 0} \frac{\sqrt{1+x} - 1}{x} \cdot \frac{\sqrt{1+x} + 1}{\sqrt{1+x} + 1}\\
+    \lim_{x\to 0} \frac{x}{x(\sqrt{1+x} + 1)}\\
+    \lim_{x \to 0} \frac{1}{\sqrt{1 + x} + 1}\\
+    \lim_{x\to 0} \frac{1}{\sqrt{1} + 1}\\
+    \lim_{x\to 0} \frac{1}{2}
+\end{align*}
+
+Left off at 1:00:53
 
 \end{enumerate}
 

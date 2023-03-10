@@ -51,6 +51,8 @@ beyond.
 
 ## Links & Resources
 
+* Great youtube account for learning skills related to computational neuroscience: [here](https://www.youtube.com/watch?v=Wo3Ua3bacvk)
+
 * [List of resources for single variable
     calculus](https://math.stackexchange.com/questions/901622/single-variable-calculus-reference-recommendations)
     * [YouTube Lectures Calc 1 (Professor

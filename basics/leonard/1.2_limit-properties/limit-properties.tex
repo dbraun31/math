@@ -42,8 +42,8 @@ horizontal line).
 
 Given two functions with limits that exist:
 \begin{align*}
-    \lim{x\to a}f(x) = L_1\\
-    \lim{x\to a} g(x) = L_2
+    \lim_{x\to a}f(x) = L_1\\
+    \lim_{x\to a} g(x) = L_2
 \end{align*}
 
 \begin{enumerate}
@@ -127,8 +127,10 @@ We have ourselves a vertical asymptote.
 To determine the direction of the asymptotes in both directions, we need to construct a
 number line between the two values that will make the numerator and denominator equal to
 zero (here $-2$ and $5$). Sample on both sides of the limit, plug into the function, and
-determine the sign on both sides.
+determine the sign on both sides.\\
 
+(coming back after awhile; I think the below is an example of factoring a limit, not an
+example of the sign analysis test...)\\
 
 \textbf{Example.}
 
@@ -215,7 +217,7 @@ not a hole. Then we need to do the sign analysis test to determine the direction
 asymptote.
 
 \begin{align*}
-    f_1(x) &= \lim{x\to -2} \frac{1}{-3+2}\\
+    f_1(x) &= \lim_{x\to -2} \frac{1}{-3+2}\\
            &= -1\\
     \lim_{x\to -2^-} \frac{1}{x + 2} &= -\infty
 \end{align*}
@@ -223,5 +225,53 @@ asymptote.
 Because the limit approaching $-2$ from the left does not equal the limit approaching $-2$
 from the right (I didn't show computation for approaching from the right here), the limit
 is said to not exist.
+
+\section{Limits of Trig Fucnctions}
+
+First thing to note is that $sin(x)$ and $cos(x)$ are continuous everywhere.
+
+\begin{align*}
+    \lim_{x\to a} sin(x) &= sin(a)\\
+    \lim_{x\to a} cos(x) &= cos(a)\\
+    \lim_{x\to a} tan(x) &= \lim_{x\to a} \frac{sin(x)}{cos(x)}\\
+                         &= \frac{\lim_{x\to a} sin(x)}{\lim_{x\to a} cos(x)}\\
+                         &= \frac{sin(a)}{cos(a)}\\
+    \lim_{x\to a} tan(x) &= tan(a), cos(x) \neq 0, x \neq \pm \frac{\pi}{2}
+\end{align*}
+
+\textbf{Example.}
+
+\begin{align}
+    \lim_{x\to 1} cos \left( \frac{x^2-1}{x-1}\right)\\
+    cos \left[ \lim_{x\to 1} \frac{x^2-1}{x-1} \right]\\
+    cos \left[ \lim_{x\to 1} \frac{(x+1)(x-1)}{x-1} \right]\\
+    cos[\lim_{x\to 1} x+1]\\
+    cos(2)
+\end{align}
+
+I guess (7) is a legal move. His justification was "Cosine is continuous, so by
+composition...".\\
+
+\textbf{Example.}
+
+\begin{align*}
+    \lim_{x\to \pi/2} [3x^2 + cos~x]\\
+    \lim_{x\to \pi/2} 3 \cdot \left( \frac{\pi}{2} \right)^2 + 0\\
+    \lim_{x \to \pi/2} 3 \cdot \left( \frac{\pi^2}{4} \right)\\
+    \lim_{x \to \pi/2} \frac{3\pi^2}{4}\\
+    \lim_{x\to \pi/2} [3x^2 + cos~x] = \frac{3\pi^2}{4}
+\end{align*}
+
+Checking against his solution. After substituting the limit in for $x$ (step 2), you can
+drop the limit from the computations. Otherwise everything is good here.\\
+
+\textbf{Example.}
+
+\begin{align*}
+    \lim_{x\to 0} \frac{sin(x)}{x}\\
+
+\end{align*}
+
+Yea this solution is totally crazy. Left off at 1:43
 
 \end{document}

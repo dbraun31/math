@@ -268,10 +268,72 @@ drop the limit from the computations. Otherwise everything is good here.\\
 \textbf{Example.}
 
 \begin{align*}
-    \lim_{x\to 0} \frac{sin(x)}{x}\\
-
+    \lim_{x\to 0} \frac{sin(x)}{x}
 \end{align*}
 
-Yea this solution is totally crazy. Left off at 1:43
+He goes through a crazy procedure of trig and the unit circle to eventually derive $1 \geq
+sin(x) / x \geq cos(x)$ and demonstrates the \textbf{squeeze theorem}, which says that
+when a function falls between two functions that share a limit, then the squeezed function
+also shares that limit. \\
+
+\emph{Note:} When you take the reciprocal when inequalities are involved you need to flip
+the inequality.\\
+
+Alright so I guess there are a few trig limits (ie, identities) that are important to
+know. They are the following:
+
+\begin{align*}
+    \lim_{x\to 0} \frac{sin(x)}{x} &= 1 \\
+    \lim_{x\to 0} \frac{1 - cos(x)}{x} &= 0\\
+    \lim_{x\to 0} \frac{tan(x)}{x} &= 1
+\end{align*}
+
+These all have elaborate proofs that he walked through that I'm not reproducing here. These will all be important to use when solving for other limits.
+
+\textbf{Example.}
+
+\begin{align*}
+    \lim_{x\to 0} \frac{sin(2x)}{x}\\
+    \lim_{x\to 0} \frac{sin(2x)}{x} \cdot \frac{2}{2}\\
+    2 \cdot \lim_{x\to 0} \frac{sin(2x)}{2x} \\ 
+    u = 2x \\
+    2 \cdot \lim_{x\to 0} \frac{sin(u)}{u}\\
+    2 \cdot 1 = 2
+\end{align*}
+
+Making a substitution with $u = 2x$ because as $2x$ approaches $0$ so does $u$.\\
+
+\textbf{Example.}
+
+\begin{align*}
+    \lim_{x\to 0} \frac{sin(5x)}{sin(6x)}\\
+    \lim_{x\to 0} \frac{sin(5x)}{sin(6x)} \cdot \frac{\frac{1}{x}}{\frac{1}{x}}\\
+    \lim_{x\to 0} \frac{\frac{sin(5x)}{x}}{\frac{sin(6x)}{x}}\\
+    \frac{5 \cdot \lim_{x\to 0} \frac{sin(5x)}{5x}}{6 \cdot \lim_{x\to 0}
+    \frac{sin(6x)}{6x}}\\
+    \frac{5 \cdot 1}{6 \cdot 1}\\
+    \frac{5}{6}
+\end{align*}
+
+
+\textbf{Example.}\\
+
+\begin{align*}
+    \lim_{x\to 0} \frac{sin(x^2)}{x}\\
+    \lim_{x\to 0} \frac{sin(x^2)}{x} \cdot \frac{x}{x}\\
+    \lim_{x\to 0} \frac{x \cdot sin(x^2)}{x^2}\\
+    \lim_{x\to 0} x \cdot \lim_{x\to 0} \frac{sin(x^2)}{x^2}\\
+    0 \cdot 1 = 0
+\end{align*}
+
+I could really use a refesher on the algebraic rules on how you can move things around
+when multiplying fractions.\\
+
+Ah so in the earlier examples when he pulled out a constant and dropped the limit
+notation, that's because the limit as $x$ approaches any number when the function is a
+constant is just that constant (ie, $\lim_{x\to 0} 2 = 2$).\\
+
+Left off at 2:24
 
 \end{document}
+

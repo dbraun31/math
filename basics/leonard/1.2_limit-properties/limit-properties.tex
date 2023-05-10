@@ -265,6 +265,8 @@ composition...".\\
 Checking against his solution. After substituting the limit in for $x$ (step 2), you can
 drop the limit from the computations. Otherwise everything is good here.\\
 
+\subsection{Trig limit identities}
+
 \textbf{Example.}
 
 \begin{align*}
@@ -333,7 +335,116 @@ Ah so in the earlier examples when he pulled out a constant and dropped the limi
 notation, that's because the limit as $x$ approaches any number when the function is a
 constant is just that constant (ie, $\lim_{x\to 0} 2 = 2$).\\
 
-Left off at 2:24
+
+\textbf{Example.}\\
+
+\begin{align*}
+    \lim_{x\to 0} \frac{sin^2(x)}{x}\\
+    \lim_{x\to 0} \frac{sin(x)}{x} \cdot \lim_{x\to 0} sin(x)\\
+    1 \cdot \lim_{x\to 0} sin(x)\\
+    0
+\end{align*}
+
+\textbf{Example.}\\
+
+\begin{align*}
+    \lim_{x\to 0} sin(\frac{1}{x})\\
+    \lim_{x\to 0} sin(\frac{1}{x}) \cdot \frac{\frac{1}{x}}{\frac{1}{x}}\\
+    \lim_{x\to 0} \frac{sin(\frac{1}{x})}{\frac{1}{x}} \cdot \lim_{x\to 0} \frac{1}{x}\\
+    \lim_{x\to 0} \frac{1}{x}\\
+    \lim_{x\to 0^-} \frac{1}{x} = -\infty\\
+    \lim_{x \to 0^+} \frac{1}{x} = \infty
+\end{align*}
+
+Hm okay got this one wrong. He's saying that the sine function will just oscillate faster
+and faster as x approaches zero, but it'll never reach zero, and since the two sides of
+the limit won't converge on the same number, the limit is said to not exist.\\
+
+\textbf{Example.}\\
+
+This one's funky, uses the squeeze theorem.
+
+\begin{align*}
+    \lim_{x\to 0} x~sin(\frac{1}{x})\\
+    -\lvert x \rvert \leq x~sin(\frac{1}{x}) \geq \lvert x \rvert\\
+    \lim_{x\to 0} - \lvert x \rvert = 0\\
+    \lim_{x\to 0} \lvert x \rvert = 0\\
+    \lim_{x\to 0} x~sin(\frac{1}{x}) = 0
+\end{align*}
+
+Since we know that the range of $sin$ is $[-1, 1]$, then scaling the output by $x$ must
+fall between $[-x, x]$. We can define the limits for those absolute value functions and
+observe that they are equal to each other, so by the squeeze theorem the function of
+interest $(x~sin(1/x))$ must equal that same limit.\\
+
+
+\textbf{Example.}\\
+
+\begin{align*}
+    \lim_{x\to 0} \frac{2 - cos(3x) - cos(4x)}{x}\\
+    \lim_{x\to 0} \frac{1 - cos(3x) + 1 - cos(4x)}{x}\\
+    \lim_{x\to 0} \frac{1 - cos(3x)}{x} + \lim_{x\to 0} \frac{1- cos(4x)}{x}\\
+    \lim_{x\to 0} \frac{1 - cos(3x)}{x} \cdot \frac{3}{3} + \lim_{x\to 0}
+    \frac{1-cos(4x)}{x} \cdot \frac{4}{4}\\
+    3 \cdot \lim_{x\to 0} \frac{1-cos(3x)}{3x} + 4 \cdot \lim_{x\to 0} \frac{1 -
+    cos(4x)}{4x}\\
+    3 \cdot 0 + 4 \cdot 0\\
+    0
+\end{align*}
+
+Some absolutely bananas fractions moves here. Step two is wild---like I can see it in
+reverse but I would've never thought that splitting the two would be legel. Then it was
+also news to me that you could multiply fractions by a $1/1$ term separately with
+different factors for different terms separated by addition / subtraction (step 4). This
+is some serious fraction kung-fu.\\
+
+\textbf{Example.}\\
+
+\begin{align*}
+    \lim_{x\to 0} \frac{x^2 - 3~sin(x)}{x}\\
+    \lim_{x\to 0} \frac{x^2}{x} - \lim_{x\to 0} \frac{3~sin(x)}{x}\\
+    0 - \lim_{x\to 0} \frac{3~sin(x)}{x}\\
+    -3 \cdot \lim_{x\to 0} \frac{sin(x)}{x}\\
+    -3
+\end{align*}
+
+Skipping a couple examples. He's stressing the importance of knowing trig identites for
+simplifying some of these expressions.
+
+\begin{align*}
+    \lim_{\theta \to 0} \frac{\theta^2}{1 - cos(\theta)}\\
+    \lim_{\theta \to 0} \frac{\theta^2}{1 - cos(\theta)} \cdot
+    \frac{1+cos(\theta)}{1+cos(\theta)}\\
+    \lim_{\theta \to 0} \frac{\theta^2 + \theta^2~cos(\theta)}{1 - cos^2(\theta)}\\
+    \lim_{\theta \to 0} \frac{\theta(\theta + \theta~cos(\theta))}{sin(\theta) \cdot
+    sin(\theta)}\\
+    \lim_{\theta\to 0} \frac{\theta}{sin(\theta)} \cdot \lim_{\theta\to 0} \frac{\theta~(1 +
+    cos(\theta))}{sin(\theta)}\\
+    \lim_{\theta \to 0} \frac{\theta}{sin(\theta)} \cdot \lim_{\theta\to 0} \frac{1 +
+    cos(\theta)}{sin(\theta)}\\
+    \lim_{\theta\to 0} \frac{1 + cos(\theta)}{sin(\theta)}
+\end{align*}
+
+Nope. Don't distribute in step 3 and do the following:
+
+\begin{align*}
+    \lim_{\theta\to 0} \frac{\theta^2~(1 + cos(\theta))}{sin^2(\theta)}\\
+    \lim_{\theta\to 0} \frac{\theta^2}{sin^2(\theta)} \cdot \lim_{\theta\to 0} 1 +
+    cos(\theta) \\
+    1 \cdot \lim_{\theta\to 0} 1 + cos(\theta)\\
+    2
+\end{align*}
+
+In a previous example that I didn't go through here, he showed the follwing:
+
+\begin{align*}
+    \lim_{x\to 0} \frac{x^2}{sin^2(x)}\\
+    \lim_{x\to 0} \left ( \frac{x}{sin(x)}\right ) ^2\\
+    \lim_{x\to 0} \left ( \frac{sin(x)}{x}\right ) ^{-2}\\
+    \left ( \lim_{x\to 0} \frac{sin(x)}{x} \right )^{-2}\\
+    1^{-2} = 1
+\end{align*}
+
 
 \end{document}
 

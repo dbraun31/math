@@ -1,0 +1,2 @@
+\contentsline {part}{I\hspace {1em}Fundamentals}{1}{}%
+\contentsline {chapter}{\numberline {1}Basic Properties of Numbers}{3}{}%

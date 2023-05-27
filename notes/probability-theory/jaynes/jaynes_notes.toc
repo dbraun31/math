@@ -1,0 +1,2 @@
+\contentsline {part}{I\hspace {1em}Principles and Elementary Applications}{1}{}%
+\contentsline {chapter}{\numberline {1}Plausible Reasoning}{3}{}%

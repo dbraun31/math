@@ -15,39 +15,10 @@ Chapter 5 of [this](bates_mixed_models.pdf) text on mixed models.
 I'm making this directory public in the hopes that documenting my math adventures might be
 of benefit to others.
 
-## Approach
+## Topics
 
-I anticipate this being a long road. The intention is to deeply learn the needed
-mathematical fundamentals to lay a solid foundation for mastering the more complex modeling
-topics.
-
-I see probability theory as being a foundation upon which the other types of math I'm
-interested in rest, so my primary aim will be to start by trying to really master probability
-theory. I see the major prerequisites of probability theory being calculus and linear
-algebra. I'll start with calculus, move to linear algebra, then to probability theory and
-beyond.
-
-### Cirriculum
-
-**Phase 0: Brush up on the basics**
-
-* Professor Leonard on YouTube ([notes](basics/leonard))
-
-**Phase 1: Study single variable calculus**
-
-* Get a foundation in real analysis
-    * Work through Chapter 1 of Abbott's *Understanding Analysis*
-        ([notes](real-analysis/))
-* Work through Spivak's *Calculus* concurrently with taking the MIT open course on [single
-    variable
-    calculus.](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/syllabus/)
-
-**Phase 2: Study multivariable calculus**
-
-**Phase 3: Study linear algebra**
-
-**Phase 4: Study probability theory**
-
+* [Calculus](notes/calculus)
+* [Probability Theory](notes/probability-theory)
 
 ## Links & Resources
 

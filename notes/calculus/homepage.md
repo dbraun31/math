@@ -26,6 +26,6 @@ the concepts.
         important information by doing this, then I might just go slowly and pick up a
         more surface-level understanding of integrals and derivatives from other sources.
 
-* NPTEL ([lectures](https://nptel.ac.in/courses/109104124) | [notes](nptel/)
+* NPTEL ([lectures](https://nptel.ac.in/courses/109104124) | [notes](nptel/))
 
 * MIT (lectures | notes)

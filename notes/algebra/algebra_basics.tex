@@ -1,0 +1,192 @@
+\documentclass{article}
+\usepackage{amsmath}
+\setlength{\parindent}{0pt}
+
+\title{Algebra Basic Rules}
+\author{Dave Braun}
+
+\begin{document}
+\maketitle
+
+This is a document where I want to list some of the basic but tricky algebra fundamental
+rules that I've probably forgotten about over the years. I'll keep adding to this list as
+I go over more complicated stuff and run into things that I've forgotten about.
+
+\section{Fraction-Fu}
+
+\textbf{Addition}\\
+Need a common denominator.
+
+\begin{align*}
+    \frac{1}{2} + \frac{3}{4}\\
+    \frac{2}{4} + \frac{3}{4}\\
+    \frac{5}{4}
+\end{align*}
+
+\textbf{Multiplication}\\
+Don't need a common denominator.
+
+\begin{align*}
+    \frac{1}{2} \cdot \frac{3}{4}\\
+    \frac{1 \cdot 3}{2 \cdot 4}
+\end{align*}
+
+\textbf{Division}\\
+Multiply by the reciprocal of the denominator.
+
+\begin{align*}
+    \frac{\frac{1}{2}}{\frac{3}{4}}\\
+    \frac{1}{2} \cdot \frac{3}{4}\\
+    \frac{3}{8}
+\end{align*}
+
+\textbf{Splitting a constant}\\
+If there's a constant separated by addition and subtraction, you can split that term so
+long as the overall value stays the same.
+
+$$
+\frac{2 - x - y}{z} = \frac{1 - x + 1 - y}{z}
+$$
+\textbf{Getting fancy with fraction identities}\\
+Can be helpful for reducing tricky expressions:
+
+$$
+\frac{x}{y} + \frac{z}{a} = \frac{x}{y} \cdot \frac{n}{n} + \frac{z}{y} \cdot
+\frac{n+k}{n+k}
+$$
+It's occurring to me I'm pretty rusty on my basic algebraic manipulations within
+fractions. See the following example of simplifying an expression:
+
+\begin{align*}
+    3x^{3/2} - 9x^{1/2} + 6x^{-1/2}\\
+    3x^{3/2} - 9x^{1/2} + \frac{6}{x^{1/2}}\\
+    \frac{3x^2}{x^{1/2}} - \frac{9x}{x^{1/2}} + \frac{6}{x^{1/2}}\\
+    \frac{3x^2 - 9x + 6}{x^{1/2}}\\
+    \frac{3(x^2 - 3x + 2)}{x^{1/2}}\\
+    3x^{-1/2}(x-3)(x-1)
+\end{align*}
+
+When separated by addition / subtraction, each term needs to be treated as its own thing.
+But when separated by multiplication, terms are very pliable. For example the exponent in
+$6x^{1/2}$ applies only to the $x$ not to the $6$. When I think about it, it's obvious
+that that's so with something more ordinary like $6x^2$. Like $6x^2 \neq 36x^2$... \\
+
+\textbf{Exponents and fractions}
+
+\begin{align}
+    \left( \frac{x}{y}\right) ^n = \frac{x^n}{y^n}\\
+    \frac{x^m}{x^n} = x^{m-n}\\
+    \left( \frac{n}{m}\right) ^{-2} = \frac{m^2}{n^2}\\
+    a^{m/n} = \sqrt[m]{a^n}\\
+    a^{-m/n} = \frac{1}{\sqrt[m]{a^n}}\\
+    a^{-m/n} = (a^m)^{\frac{-1}{n}}
+\end{align}
+
+Rule (6) is super nifty and relies on the nested fraction multiplication rule (defined
+below).\\
+
+\emph{Example.}
+
+In the diagnostic exercises we have the following expression and the solution which I
+really like comes from Bing AI:
+
+\begin{align*}
+    16^{-3/4}\\
+    (2^4)^{-3/4}\\
+    2^{4/1 \cdot -3/4}\\
+    2^{-3}\\
+    \frac{1}{2^3}\\
+    \frac{1}{8}
+\end{align*}
+
+Factoring out powers is a really neat way of simplifying things here.\\
+
+More fraction-fu with radicals:
+
+\begin{align*}
+    2x(4-x)^{-1/2} - 3 \sqrt{4 - x} &= 0\\
+    \frac{2x - 3\sqrt{4-x}}{\sqrt{4-x}} &= 0\\
+    \frac{\sqrt{4-x}}{\sqrt{4-x}} \cdot \frac{2x - 3\sqrt{4-x}}{\sqrt{4-x}} &= 0\\
+    \frac{2x\sqrt{4-x} - 3(4-x)}{4-x} &= 0\\
+    \frac{4-x}{4-x} \cdot \frac{2x\sqrt{4-x} - 3(4-x)}{4-x} &= 0\\
+    \frac{2x(4-x) - 3(4-x)^2}{(4-x)^2} &= 0\\
+    \frac{(4-x)(2x - 3(4-x))}{(4-x)^2} &= 0\\
+    \frac{2x-12 + 3x}{4-x} &= 0\\
+    5x - 12 = 0\\
+    x = \frac{12}{5}
+\end{align*}
+
+Serious fraction-fu.
+
+\section{Exponents}
+
+Negative bases:
+
+\begin{align}
+    (-3)^2 = 9\\
+    -3^2 = -9\\
+    (-3)^3 = -27\\
+\end{align}
+
+Multiplication and nested exponents:
+
+\begin{align*}
+    x^2 \cdot x^3 = x^5\\
+    (x^2)^3 = x^6
+\end{align*}
+
+This $x^2 + x^3$ can't be reduced.
+
+\section{Radicals}
+
+\textbf{Product rule}
+
+$$
+\sqrt{AB} = \sqrt{A} \cdot \sqrt{B}
+$$
+
+\textbf{Quotient rule}
+
+$$
+\frac{\sqrt{A}}{\sqrt{B}} = \sqrt{\frac{A}{B}}
+$$
+
+\textbf{Simplifying}
+
+$$
+\sqrt{x^2y} = x\sqrt{y}
+$$
+\section{Inequalities}
+
+One notion I forgot about is \emph{critical points}. This is a number which makes the
+expression equal to zero or undefined. You want to find all critical points and then test
+in the intervals between them to see whether the inequality holds. Here's an example from
+the diagnostic list using an undefined critical point that I got wrong.
+
+\begin{align*}
+    \frac{2x-3}{x+1} \leq 1\\
+\end{align*}
+
+We note that one critical point is $-1$ (denominator). To find more we change the
+inequality to an equality and solve.
+
+\begin{align*}
+    \frac{2x-3}{x+1} = 1\\
+    2x-3 = x+1\\
+    x = 4
+\end{align*}
+
+After testing the intervals in and around $-1,~4$ we find that the inequality only holds
+in the middle, ie $(-1, 4]$.
+
+
+\section{Things to Include}
+
+\begin{itemize}
+    \item Exponent rules when there are coefficients.
+    \item Cancelling term rules in fractions
+    \item Factoring cubic polynomials.
+\end{itemize}
+
+
+\end{document}

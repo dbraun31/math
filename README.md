@@ -20,6 +20,13 @@ of benefit to others.
 * [Calculus](notes/calculus)
 * [Probability Theory](notes/probability-theory)
 
+### Quick links
+
+* [Algebra review notes](notes/algebra/algebra_basics.pdf)
+* [Professor leonard notes](notes/calculus/leonard)
+* [Spivak notes](notes/calculus/spivak/spivak_notes.pdf)
+* [Jaynes notes](notes/probability-theory/jaynes/jaynes_notes.pdf)
+
 ## Links & Resources
 
 * Great youtube account for learning skills related to computational neuroscience: [here](https://www.youtube.com/watch?v=Wo3Ua3bacvk)

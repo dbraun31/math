@@ -1,2 +1,6 @@
 \contentsline {part}{I\hspace {1em}Fundamentals}{1}{}%
 \contentsline {chapter}{\numberline {1}Basic Properties of Numbers}{3}{}%
+\contentsline {section}{\numberline {1.1}Addition}{3}{}%
+\contentsline {subsection}{\numberline {1.1.1}Properties involving zero}{3}{}%
+\contentsline {section}{\numberline {1.2}Multiplication}{4}{}%
+\contentsline {subsection}{\numberline {1.2.1}More zero stuff}{6}{}%

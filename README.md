@@ -26,6 +26,7 @@ of benefit to others.
 * [Professor leonard notes](notes/calculus/leonard)
 * [Spivak notes](notes/calculus/spivak/spivak_notes.pdf)
 * [Jaynes notes](notes/probability-theory/jaynes/jaynes_notes.pdf)
+* [Jaynes lecture notes](notes/probability-theory/jaynes/lectures)
 
 ## Links & Resources
 

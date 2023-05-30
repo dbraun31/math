@@ -1,3 +1,177 @@
 \chapter{Basic Properties of Numbers}
 
-Here is some fascinating description about basic properties of numbers.
+\begin{quote}
+    To be conscious that you are ignorant is a great step to knowledge.
+    \hfill -- Benjamin Disraeli
+\end{quote}
+
+We're going to consider twelve properties of numbers, and the first nine are concerned
+with addition and multiplication.
+
+\section{Addition}
+
+\begin{definition}
+    Regard addition as an operation which can be performed on a pair of numbers, $a + b$.
+\end{definition}
+
+He argues it might be intuitive to want to define addition over a series of numbers, but
+that series can just be broken down into summing of different pairs. This reveals that the
+order of the summation yields equivalent results, which gives our first property:
+
+\begin{property}[Associative law for addition]
+    If $a,~b,$ and $c$ are any numbers, then
+    $$
+    a + (b + c) = (a + b) + c
+    $$
+\end{property}
+
+This generalizes straightforwardly to $a_1 + \ldots + a_n$. He notes that a reasonable
+approach to showing this extension is outlined in Problem 24. 
+
+\subsection{Properties involving zero}
+
+\begin{property}[Existence of an additive identity]\label{prop:additiveidentity}
+    If $a$ is any number, then 
+    $$
+    a + 0 = 0 + a = a.
+    $$
+\end{property}
+
+\begin{property}[Existence of additive inverses]
+    For every number $a$, there is a number $-a$ such that
+    $$
+    a + (-a) = (-a) + a = 0
+    $$
+\end{property}
+
+We can now use these three properties to prove a simple assertion, which is that if a
+number $x$ satisfies $a + x = a$, $x=0$.
+
+\begin{alignat*}{3}
+    &\text{If} \quad&  a + x &= a,\\
+    &\text{then} \quad & (-a) + (a + x) &= (-a) + a = 0;\\
+    &\text{hence} \quad & ((-a) + a) + x &= 0;\\
+    &\text{hence} \quad & 0 + x &= 0\\
+    &\text{hence} \quad & x &=0
+\end{alignat*}
+
+Ahhh that's pretty cool. He goes on to show that you can support basic algebraic maneuvers
+with these three properties. 
+
+\begin{property}[Commutative law for addition]
+    If $a$ and $b$ are any numbers, then
+    $$
+    a + b = b + a
+    $$
+\end{property}
+
+He goes on to say that commutative law doesn't hold for other types of relations (eg,
+subtraction). But in order to have all algebra moves on the table, it's necessary to
+introduce multiplication.
+
+\section{Multiplication}
+
+\begin{property}[Associative law of multiplication]
+    If $a,~b$ and $c$ are any numbers, then
+    $$
+    a \cdot (b\cdot c) = (a \cdot b) \cdot c
+    $$
+\end{property}
+
+\begin{property}[Existence of multiplicative identity]
+    If $a$ is any number, then
+    \begin{align*}
+        a \cdot 1 = 1 \cdot a = a\\
+        \text{Moreover,}~1 \neq 0
+    \end{align*}
+\end{property}
+
+He's saying we have to list $1\neq 0$ because there's no way to prove based only on the
+other properties---they would all hold if $0$ was the only number. 
+
+\begin{property}[Existence of multiplicative inverses]\label{prop:multinverse}
+    For every number $a \neq 0$, there is a number $a^{-1}$ such that
+    $$
+    a \cdot a^{-1} = a^{-1} \cdot a = 1
+    $$
+\end{property}
+
+\begin{property}[Commutative law of multiplication]
+    If $a$ and $b$ are any numbers, then
+    $$
+    a \cdot b = b \cdot a
+    $$
+\end{property}
+
+Points out how necessary $a\neq 0$ is in Property \ref{prop:multinverse}, as there is no
+number $0^{-1}$ satisfying $0 \cdot 0^{-1} = 1$. This is cool: just as how subtraction was
+defined in terms of addition, division is defined in terms of multiplication. Note that
+the usual form of an inverse (at least for an integer) is:
+
+$$
+a^{-1} = \frac{1}{a}
+$$
+
+So he says the symbol $a/b$ can be thought of as $a \cdot b^{-1}$. We can show that, as
+long as $a\neq 0$, then for $a \cdot b = a \cdot c$, that $b = c$.
+
+\begin{alignat*}{3}
+    &\text{If}\quad& a\cdot b  &= 0~\text{and}~ a \neq 0,\\
+    &\text{then}\quad&   a^{-1} \cdot (a \cdot b)  &= a^{-1} \cdot (a \cdot c);\\
+    & \text{hence}\quad&  (a^{-1} \cdot a) \cdot b  &= (a^{-1} \cdot a) \cdot c;\\
+    & \text{hence} \quad & 1 \cdot b &= 1 \cdot c;\\
+    & \text{hence} \quad & b&=c.
+\end{alignat*}
+
+It also follows from Property \ref{prop:multinverse} that if $a \cdot b = 0$ then either
+$a = 0$ or $b = 0$ (implied that this includes the possibility that they're both zero). We
+can show that, if we know one of them \emph{isn't} zero, that the other one must be:
+
+\begin{alignat*}{3}
+    &\text{if} \quad& a \cdot b &= 0~\text{and}~ a \neq 0,\\
+    & \text{then} \quad& a^{-1} \cdot (a \cdot b) &= 0;\\
+    & \text{hence} \quad& (a^{-1} \cdot a) \cdot b &= 0;\\ 
+    & \text{hence} \quad& 1 \cdot b &= 0; \\
+    & \text{hence} \quad& b &=0.
+\end{alignat*}
+
+This concept of one or another variable must be equal to zero comes into play in the
+familiar factoring of binomial situations (eg, $(x-1)(x-2) = 0$), where we know $x = 1$ or
+$x = 2$.
+
+This next property gives us tremendous ability to prove lots of things:
+
+\begin{property}[Distributive law]\label{prop:distributive}
+    If $a,~b,$ and $c$ are any numbers, then 
+    $$
+    a \cdot (b + c) = a \cdot b + a \cdot c
+    $$
+\end{property}
+
+
+With Property \ref{prop:distributive}, we can now show the only case when $a - b = b-a$:
+
+\begin{alignat*}{3}
+    &\text{If}\quad& a - b &= b - a, \\
+    & \text{then}\quad& (a-b) + b &= (b-a) + b = b + (b-a);\\
+    & \text{then}\quad& a &= b + b -a;\\
+    & \text{then}\quad& a + a &= (b+b-a)+a = b+b;\\
+    & \text{Consequently}\quad& a \cdot(1+1)&= b \cdot (1+1),\\
+    &\text{and therefore}\quad& a &=b.
+\end{alignat*}
+
+\subsection{More zero stuff}
+
+With Property \ref{prop:distributive}, we can do more reckoning around zero, such as
+showing that $a \cdot 0 = 0$. (Some of this upcoming logic gets pretty nifty). The proof:
+
+\begin{align}
+    a \cdot 0 &= a \cdot (0+0) \label{step3} \\
+              &= a\cdot0 + a \cdot 0\\
+    (a\cdot 0) - (a \cdot 0) &= a \cdot 0 + a \cdot 0 - a \cdot 0\\
+    0 &= a \cdot 0
+\end{align}
+
+Step \ref{step3} is by Proposition \ref{prop:additiveidentity} (the additive identity).
+
+Left off near bottom of page 7.

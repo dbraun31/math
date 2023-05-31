@@ -3,4 +3,6 @@
 \contentsline {section}{\numberline {1.1}Addition}{3}{}%
 \contentsline {subsection}{\numberline {1.1.1}Properties involving zero}{3}{}%
 \contentsline {section}{\numberline {1.2}Multiplication}{4}{}%
-\contentsline {subsection}{\numberline {1.2.1}More zero stuff}{6}{}%
+\contentsline {section}{\numberline {1.3}Distribution}{5}{}%
+\contentsline {subsection}{\numberline {1.3.1}More zero stuff}{6}{}%
+\contentsline {section}{\numberline {1.4}Inequalities}{7}{}%

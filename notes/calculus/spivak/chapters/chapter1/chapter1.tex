@@ -37,7 +37,7 @@ approach to showing this extension is outlined in Problem 24.
     $$
 \end{property}
 
-\begin{property}[Existence of additive inverses]
+\begin{property}[Existence of additive inverses]\label{prop:additiveinverse}
     For every number $a$, there is a number $-a$ such that
     $$
     a + (-a) = (-a) + a = 0
@@ -139,6 +139,8 @@ This concept of one or another variable must be equal to zero comes into play in
 familiar factoring of binomial situations (eg, $(x-1)(x-2) = 0$), where we know $x = 1$ or
 $x = 2$.
 
+\section{Distribution}
+
 This next property gives us tremendous ability to prove lots of things:
 
 \begin{property}[Distributive law]\label{prop:distributive}
@@ -166,12 +168,85 @@ With Property \ref{prop:distributive}, we can do more reckoning around zero, suc
 showing that $a \cdot 0 = 0$. (Some of this upcoming logic gets pretty nifty). The proof:
 
 \begin{align}
-    a \cdot 0 &= a \cdot (0+0) \label{step3} \\
+    a \cdot 0 &= a \cdot (0+0) \label{step169} \\
               &= a\cdot0 + a \cdot 0\\
     (a\cdot 0) - (a \cdot 0) &= a \cdot 0 + a \cdot 0 - a \cdot 0\\
     0 &= a \cdot 0
 \end{align}
 
-Step \ref{step3} is by Proposition \ref{prop:additiveidentity} (the additive identity).
+Step \ref{step169} is by Proposition \ref{prop:additiveidentity} (the additive identity).
 
-Left off near bottom of page 7.
+He next talks about using Property \ref{prop:distributive} to show why multiplying two
+negative numbers equals a positive number. Starting with proving that $(-a) \cdot b = -(a
+\cdot b)$:
+
+\begin{align}
+    (-a) \cdot b + a \cdot b &= [(-a) + a] \cdot b \label{step181}\\
+                             &= 0 \cdot b\\
+                             &= 0
+\end{align}
+
+He says then by adding $-(a \cdot b)$ to both sides, we see that $(-a) \cdot b = -(a \cdot
+b)$. A few things I'm learning about proofs here:
+
+\begin{itemize}
+
+    \item I think knowing where to get started in proofs is one of the hardest parts. Here
+        he's implicitly starting with applying Proposition \ref{prop:additiveinverse}
+        (additive inverse), by relying on the logic that, if two quantities are the same,
+        then adding the quantity to its inverse should reduce to zero. So if $(-a) \cdot b
+        = -(a \cdot b)$, then we should be able to show that $(-a) \cdot b + a\cdot b =
+        0$.
+    \item When we get to the end ($=0$), that's actually a shorthand for the initial
+        expression equaling whatever we've arrived at (ie, $(-a) \cdot b + a \cdot b =
+        0$). So when he says something like "adding $-(a\cdot b)$ to both sides, that
+        really means $(-a) \cdot b + a \cdot b - (a \cdot b) = 0 - (a \cdot b)$, which
+        reduces to $(-a) \cdot b = - (a \cdot b)$.
+
+\end{itemize}
+
+We then go on to prove that $(-a) \cdot (-b) = a \cdot b$:
+
+\begin{align}
+    (-a) \cdot (-b) + [-(a \cdot b)] &= (-a) \cdot (-b) + (-a) \cdot b\label{step209}\\
+                                 &= -a \cdot (-b + b)\label{step210}\\
+                                 &= -a \cdot 0 \label{step211}\\
+                                 &= 0 \\
+    (-a) \cdot (-b) + [-(a \cdot b)] + (a \cdot b) &= 0 + (a\cdot b)\\
+    (-a) \cdot (-b) &= a \cdot b
+\end{align}
+
+Step \ref{step209} applies Proposition \ref{prop:additiveinverse} and applies the previous
+proof that $(-a) \cdot b = -(a \cdot b)$. Step \ref{step210} applies Proposition
+\ref{prop:distributive}, and step \ref{step211} applies Proposition
+\ref{prop:additiveinverse}. He notes that this last proof is a \emph{consequence} of the
+proposition---it simply follows from them once they're established. Goes on to hype up
+Proposition \ref{prop:distributive} a bit more, showing how essential it is for basic
+algebraic operations like factoring and multiplication.
+
+\section{Inequalities}
+
+Inequalities apparently feature prominently in calculus. Numbers satisfying $a > 0$ are
+called \textbf{positive}, while those satisfying $a < 0$ are called \textbf{negative}. If
+we denote the collection of all positive numbers with $P$, we can state the remaining
+three propositions in terms of $P$:
+
+\begin{property}[Trichotomy law]\label{prop:trichotomy}
+    For every number $a$, one and only one of the following holds:
+    \begin{enumerate}[label=(\roman*), leftmargin = 3em]
+        \item $a = 0$,
+        \item $a$ is in the collection $P$,
+        \item $-a$ is in the collection $P$.
+    \end{enumerate}
+\end{property}
+
+\begin{property}[Closure under addition]\label{prop:addclosure}
+    If $a$ and $b$ are in $P$, then $a + b$ is in $P$
+\end{property}
+
+\begin{property}[Closure under multiplication]\label{prop:multclosure}
+    If $a$ and $b$ are in $P$, then $a \cdot b$ is in $P$.
+\end{property}
+
+
+Left off on top of p. 10.

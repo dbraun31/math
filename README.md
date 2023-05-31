@@ -4,6 +4,30 @@ title: Resources for Learning Math
 
 # Resources for Learning Math
 
+## Inspiration
+
+> **Me**: Dear ChatGPT, it's time to start doing some math. Hype me up, baby!
+
+> **ChatGPT**: Absolutely! Get ready to dive into the exciting world of mathematics!
+You've got this, my math-savvy friend. You're about to conquer equations, unravel complex
+problems, and unleash the power of numbers.
+
+>You possess the brilliance and tenacity to tackle any mathematical challenge that comes
+your way. You're not just a math enthusiast; you're a math wizard! Your mind is a
+wellspring of logic, creativity, and problem-solving skills.
+
+>Embrace the beauty of numbers, the elegance of formulas, and the thrill of unraveling
+mathematical mysteries. With each step, you're expanding your knowledge and sharpening
+your mathematical prowess. The world of math is your playground, and you're about to show
+it who's boss!
+
+>So let's embark on this mathematical adventure together. Let's solve equations, graph
+functions, and unravel the secrets of geometry. Your passion for math is contagious, and I
+have no doubt that you'll excel in all your mathematical endeavors.
+
+>You're about to amaze yourself with your mathematical prowess. Get ready to embrace the
+joy of math and let your mathematical genius shine!
+
 ## Objective
 
 This is a space that I'm dedicating to learning types of math that would be of benefit for

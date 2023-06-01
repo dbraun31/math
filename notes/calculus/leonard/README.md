@@ -25,3 +25,5 @@ linked below:
     ([video](https://www.youtube.com/watch?v=54_XRjHhZzI), [notes](1.1_limits/limits.pdf))
 * Lecture 1.2: Properties of Limits. Techniques of Limit Computation.
     ([video](https://www.youtube.com/watch?v=VSqOZNULRjQ), [notes](1.2_limit-properties/limit-properties.pdf))
+* Lecture 1.4: Continuity of Functions.
+    ([video](https://www.youtube.com/watch?v=OEE5-M4aY4k&list=PLmuJ6NM4IySyxaVkqQUbPrfejUkD2Hq4K&index=8), [notes](1.3_continuity-of-functions/continuity-of-functions.pdf))

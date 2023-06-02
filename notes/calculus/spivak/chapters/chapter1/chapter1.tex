@@ -249,4 +249,105 @@ three propositions in terms of $P$:
 \end{property}
 
 
-Left off on top of p. 10.
+He says these properties should be paired with the following definitions:
+
+\begin{alignat*}{3}
+    &a > b \quad & \text{if} \quad & a - b \text{ is in } P;\\
+    & a < b \quad & \text{if} \quad & b>a;\\
+    & a \geq b \quad & \text{if} \quad & a > b \text{ or } a = b; \\
+    & a \leq b \quad & \text{ if } \quad & a < b \text{ or } a = b.
+\end{alignat*}
+
+The first one here is the only one that's a bit tricky, which is essentially saying that
+as long as the difference is positive, then we can say $a > b$. He also points out that $a
+> 0$ if and only if $a$ is in $P$.
+
+Glossing over some details. He goes on to say that if $a<b$ and $b<c$, then $a<c$. He gets
+there with the following logic. First, suppose $a<b$ and $b<c$. Then
+
+\begin{alignat*}{3}
+    &\quad&& b-a~\text{is in}~P,\\
+    &\text{and}\quad&& c-b~\text{is in}~P,\\
+    & \text{so}\quad&& c-a = (c-b) + (b-a)~\text{is in}~P.
+\end{alignat*}
+
+Yea this logic of ``something minus something is positive'' is a little tricky. Let's zoom
+in on $b-a$ is in $P$ provided that $a<b$. What we \emph{don't} have is $b>a>0$. If $b\in
+P$, then the only constraint on $a$ is $a<b$---ie, $a$ can be negative because, for
+example, $10 - (-5) > 0$. If $b < 0$, then $a < b$ still satisfies $b-a \in P$. 
+
+He also shows, by Property \ref{prop:multclosure}, that $ab > 0$ if $a>0,~b>0$ and also if
+$a<0,~b<0$. Thus, $a^2>0$ if $a \neq 0$.
+The fact that $-a >0$ if $a < 0$ sets us up to define the absolute value function:
+
+\begin{definition}[Absolute Value]
+    $$
+    \lvert a \rvert = \begin{cases}
+        a, & a \geq 0\\
+        -a, & a \leq 0
+    \end{cases}
+    $$
+\end{definition}
+
+He says the most straightforward way to deal with absolute values is to treating several
+cases separately.
+
+\begin{theorem}
+    For all real numbers $a$ and $b$, we have
+    $$
+    \lvert a + b \rvert \leq \lvert a\rvert + \lvert b \rvert
+    $$
+\end{theorem}
+
+\begin{proof}
+    Consider four cases:
+    \begin{alignat*}{4}
+        &(1)\quad\quad&& a \geq 0, \quad & b \geq 0;\\
+        &(2)\quad\quad && a \geq 0, \quad & b \leq 0;\\
+        &(3)\quad\quad && a \leq 0, \quad & b \geq 0;\\
+        &(4)\quad\quad && a \leq 0, \quad & b \leq 0;\\
+    \end{alignat*} 
+
+    For case (1), we see $\lvert a + b \rvert = \lvert a \rvert + \lvert b \rvert$.
+    For case (4), we have $a+b \leq 0$, and again equality holds:
+    \[
+    \lvert a + b \rvert = -(a+b) = -a + (-b) = \lvert a \rvert + \lvert b \rvert
+\]
+    \emph{My note:} Again with proofs, it's a little obtuse to me where the reasoning
+    behind the initial claim $a+b \leq 0$ comes from. Like I can clearly see that it's
+    true, but I don't know how I would have generated that as a starting point.
+
+    Case (2) starts to get tricky. He says we must prove that
+    \[
+    \lvert a + b \rvert \leq a - b
+    \]  
+    It took me a minute to see where this comes from. I understand the right side of the
+    inequality as being the result of passing the original expression ($\lvert a \rvert +
+    \lvert b \rvert$) through the absolute value function for $a \geq 0,~b \leq 0$. He
+    then proceeds to check whether this inequality holds true for cases where $a + b \geq 0$
+    and $a + b \leq 0$. For the first case $a + b \geq 0$,
+    \begin{align*}
+        a + b &\leq a - b\\
+        b &\leq -b
+    \end{align*}
+    Which is true when $b \leq 0$. Next, for $a + b \leq 0$ we show that
+    \begin{align*}
+        -a - b &\leq a - b\\
+        -a &\leq a
+    \end{align*}
+
+    It's hard for me to see where $-a - b$ comes from. Maybe it's something like
+    \begin{align*}
+        a + b &\leq 0\\
+        \lvert a + b \rvert &= -(a + b)\\
+        &= -a + (-b)
+    \end{align*}
+
+    Yea best I can tell that's it. Just gotta think back to the functional form of the
+    absolute value function and apply a negative sign to any input less than zero. And so
+    this is an example of what he alluded to above, where one needs to treat absolute
+    values with respect to several different cases that revolve around zero.
+        
+\end{proof}
+
+Left off right after this proof.

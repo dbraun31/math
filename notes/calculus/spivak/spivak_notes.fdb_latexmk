@@ -1,18 +1,18 @@
 # Fdb version 3
-["bibtex spivak_notes"] 1685717851 "spivak_notes.aux" "spivak_notes.bbl" "spivak_notes" 1685717852
+["bibtex spivak_notes"] 1685964283 "spivak_notes.aux" "spivak_notes.bbl" "spivak_notes" 1685964283
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "bibtex_example.bib" 0 -1 0 ""
-  "chapters/chapter1/chapter1.aux" 1685717852 2378 d43b694aeb59b0a986dbcba8fd6bf4e3 "pdflatex"
-  "spivak_notes.aux" 1685717852 247 9e30e455d2bd3fd8c1bda9b1e1176893 "pdflatex"
+  "chapters/chapter1/chapter1.aux" 1685964283 2378 c8fd383e34bda9d599989071ae7ec5fe "pdflatex"
+  "spivak_notes.aux" 1685964283 247 124a587e07e94fcc810a2410413d724e "pdflatex"
   (generated)
   "spivak_notes.bbl"
   "spivak_notes.blg"
-["makeindex spivak_notes.idx"] 1685198526 "spivak_notes.idx" "spivak_notes.ind" "spivak_notes" 1685717852
-  "spivak_notes.idx" 1685717852 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex spivak_notes.idx"] 1685198526 "spivak_notes.idx" "spivak_notes.ind" "spivak_notes" 1685964283
+  "spivak_notes.idx" 1685964283 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "spivak_notes.ilg"
   "spivak_notes.ind"
-["pdflatex"] 1685717851 "spivak_notes.tex" "spivak_notes.pdf" "spivak_notes" 1685717852
+["pdflatex"] 1685964283 "spivak_notes.tex" "spivak_notes.pdf" "spivak_notes" 1685964283
   "/etc/texmf/web2c/texmf.cnf" 1653409262 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/dave/texmf/tex/latex/mdframed/md-frame-0.mdf" 1654001807 24890 aa0a00613c5795000110998d41ba6941 ""
   "/home/dave/texmf/tex/latex/mdframed/mdframed.sty" 1654001807 53698 7ae0974297dd26d6e87999dce96f1003 ""
@@ -101,15 +101,15 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1654081647 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1654081681 2801243 207d2c5a75b1282cb3d19b5edbc68cc5 ""
-  "chapters/chapter1/chapter1.aux" 1685717852 2378 d43b694aeb59b0a986dbcba8fd6bf4e3 "pdflatex"
-  "chapters/chapter1/chapter1.tex" 1685717851 13357 d989deb2ccf6c981a4b568e2131c4522 ""
+  "chapters/chapter1/chapter1.aux" 1685964283 2378 c8fd383e34bda9d599989071ae7ec5fe "pdflatex"
+  "chapters/chapter1/chapter1.tex" 1685964282 14243 244ffb22adac7c343010a757a0142b5a ""
   "frontmatter/preamble" 0 -1 0 ""
   "krantz.cls" 1685198365 60537 b28db24945982e28dc1d8b95d77ed06c ""
-  "spivak_notes.aux" 1685717852 247 9e30e455d2bd3fd8c1bda9b1e1176893 "pdflatex"
+  "spivak_notes.aux" 1685964283 247 124a587e07e94fcc810a2410413d724e "pdflatex"
   "spivak_notes.bbl" 0 -1 0 "bibtex spivak_notes"
   "spivak_notes.ind" 1685198526 0 d41d8cd98f00b204e9800998ecf8427e "makeindex spivak_notes.idx"
   "spivak_notes.tex" 1685714076 1314 4eec3a35887ca758a5d1750dd2bcee73 ""
-  "spivak_notes.toc" 1685717852 519 77156693085757226d9868bf67745bab "pdflatex"
+  "spivak_notes.toc" 1685964283 519 77156693085757226d9868bf67745bab "pdflatex"
   (generated)
   "chapters/chapter1/chapter1.aux"
   "spivak_notes.aux"

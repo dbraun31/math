@@ -350,4 +350,25 @@ cases separately.
         
 \end{proof}
 
-Left off right after this proof.
+He says that we can often find shorter methods for dealing with absolute values. For
+example, for the last theorem, we can take advantage of the fact that
+
+\[
+    \lvert a \rvert = \sqrt{a^2}
+\]
+to show that
+
+\begin{align*}
+    (\lvert a + b \rvert)^2 = (a + b)^2 &= a^2 + 2ab + b^2\\
+                            &\leq a^2 + 2 \lvert a \rvert \cdot \lvert b \rvert + b^2\\
+                            &= \lvert a \rvert^2 + 2\lvert a \rvert \cdot \lvert b \rvert
+                            + \lvert b \rvert^2\\
+                            &= (\lvert a \rvert + \lvert b \rvert)^2
+\end{align*}
+
+Therefore, $\lvert a + b \rvert \leq \lvert a \rvert + \lvert b \rvert$ because $x^2 < y^2$
+implies $x < y$. He finally points out that this theorem is an equality if $a$ and $b$
+have the same sign or one is zero; the theorem is a less than inequality if $a$ and $b$
+have opposite signs.
+
+

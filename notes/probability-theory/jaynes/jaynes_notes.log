@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.6.1)  27 MAY 2023 10:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.10)  10 JUN 2023 21:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -417,7 +417,15 @@ Underfull \hbox (badness 10000) detected at line 34
 []
  []
 
-(./jaynes_notes.toc)
+(./jaynes_notes.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write4
 \openout4 = `jaynes_notes.toc'.
 
@@ -468,34 +476,43 @@ Overfull \hbox (336.25pt too wide) detected at line 44
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
+Underfull \hbox (badness 10000) detected at line 44
 []
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 10000) detected at line 54
+ []
 
 
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
+Overfull \hbox (336.25pt too wide) detected at line 54
 []
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 10000) detected at line 54
+ []
 
 
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
+Overfull \hbox (336.25pt too wide) detected at line 54
 []
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 10000) detected at line 54
+ []
 
 
-Overfull \hbox (336.25pt too wide) has occurred while \output is active
+Overfull \hbox (336.25pt too wide) detected at line 54
+[]
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 54
+ []
+
+
+Overfull \hbox (336.25pt too wide) detected at line 54
 []
  []
 
@@ -505,6 +522,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [1
+
+
+] [2
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -543,7 +563,44 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][] 
  []
 
-[2]
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (336.25pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][] 
+ []
+
+[4]
 \openout2 = `chapters/chapter1/chapter1.aux'.
 
  (./chapters/chapter1/chapter1.tex
@@ -583,31 +640,41 @@ Overfull \hbox (336.25pt too wide) detected at line 1
  []
 
 Chapter 1.
-)
+
 Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][] 
  []
 
-[3
+[5
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
+
+ []
+
+
+Overfull \hbox (15.75395pt too wide) detected at line 78
+[]
+ []
+
+[6]) [7]
 No file jaynes_notes.bbl.
 (./jaynes_notes.ind) (./jaynes_notes.aux (./chapters/chapter1/chapter1.aux)) ) 
 Here is how much of TeX's memory you used:
- 3451 strings out of 478287
- 54432 string characters out of 5849290
- 337946 words of memory out of 5000000
- 21625 multiletter control sequences out of 15000+600000
- 474101 words of font info for 43 fonts, out of 8000000 for 9000
+ 3498 strings out of 478287
+ 55107 string characters out of 5849289
+ 346947 words of memory out of 5000000
+ 21654 multiletter control sequences out of 15000+600000
+ 478608 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,62p,259b,162s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on jaynes_notes.pdf (6 pages, 78328 bytes).
+ 55i,11n,62p,259b,168s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on jaynes_notes.pdf (10 pages, 142464 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

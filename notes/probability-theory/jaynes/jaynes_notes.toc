@@ -1,2 +1,8 @@
-\contentsline {part}{I\hspace {1em}Principles and Elementary Applications}{1}{}%
-\contentsline {chapter}{\numberline {1}Plausible Reasoning}{3}{}%
+\contentsline {part}{I\hspace {1em}Principles and Elementary Applications}{3}{}%
+\contentsline {chapter}{\numberline {1}Plausible Reasoning}{5}{}%
+\contentsline {section}{\numberline {1.1}Deductive and plausible reasoning}{5}{}%
+\contentsline {subsection}{\numberline {1.1.1}Deductive reasoning}{5}{}%
+\contentsline {subsection}{\numberline {1.1.2}Inductive reasoning}{6}{}%
+\contentsline {subsection}{\numberline {1.1.3}Logical vs. causal connections}{7}{}%
+\contentsline {subsection}{\numberline {1.1.4}A hopeful note about plausible reasoning}{7}{}%
+\contentsline {section}{\numberline {1.2}Analogies with physical theories}{7}{}%

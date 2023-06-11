@@ -52,10 +52,17 @@ of benefit to others.
 * [Jaynes notes](notes/probability-theory/jaynes/jaynes_notes.pdf)
 * [Jaynes lecture notes](notes/probability-theory/jaynes/lectures)
 
+### For the future
+
+* Linear algebra
+* Mathematical statistics
+    * See [this](texts_pub/statistics/shalizi_TaLR.pdf) text on linear regression and [this](texts_pub/statistics/shalizi_ADA.pdf) text on advanced data analysis.
+
 ## Links & Resources
 
 * Great youtube account for learning skills related to computational neuroscience: [here](https://www.youtube.com/watch?v=Wo3Ua3bacvk)
 
+* [Amazing mathematically rigorous textbook on data analysis](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf)
 * [Paul's Online Notes](https://tutorial.math.lamar.edu/)
     * Really great resource of notes and exercises.
 * [List of resources for single variable

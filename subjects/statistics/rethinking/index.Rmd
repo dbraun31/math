@@ -1,0 +1,91 @@
+--- 
+title: "Statistical Rethinking Notes"
+author: "Dave Braun"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  This is a minimal example of using the bookdown package to write a book.
+  The HTML output format for this example is bookdown::gitbook,
+  set in the _output.yml file.
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+
+# The Golem of Prague
+
+This chapter was largely an introduction to the major themes of the book. The major
+topics covered are:
+
+1. Bayesian data analysis
+2. Model comparison
+3. Multilevel models
+4. Graphical causal models
+
+Maybe the most interesting discussion was around Figure 1.2 and all the problems 
+in inference that arise due to the relationships between hypotheses, process models,
+and statistical models. Each can imply more than one of the other, and so a 
+strict falsification approach is problematic. 
+
+Each chapter comes along with a YouTube video lecture. I'll take more real-time
+notes along with this first lecture below. The YouTube lecture for chapter one
+is [here](https://www.youtube.com/watch?v=FdnMWdICdRs&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus&index=1).
+
+## Lecture notes
+
+He's arguing that the argument between Bayesian vs. frequentist statistics is 
+only had by boomer statisticians. The real discussion is about causal inference.
+For statistical models to produce scientific insight, they require
+additional **scientific (causal) models**. The causes for the data don't come from the data,
+they must come from theory.
+
+### What is causal inference?
+
+Two key aspects to understanding causal inference:
+
+1. **Prediction of intervention.** Knowing a cause means being able to predict the 
+consequences of an *intervention*. More than just prediction per se.
+2. **Imputation of missing observations.** Knowing a cause means being able to construct
+unobserved counterfactual outcomes. Makes me think of simulating a model where
+you can play out many different scenarios.
+
+Even "purely" descriptive research needs to consider causal modeling. Any time
+you're trying to draw inferences about a population from a sample, you need to
+consider factors that might have caused the sample to be the way that it is.
+
+#### Directed acyclic graphs (DAGs)
+
+These are essentially box-and-arrow causal models of a process. 
+
+```{r echo=FALSE}
+library(DiagrammeR)
+mermaid("
+    graph LR
+    
+    X --> Y
+    A --> X
+    C --> X
+    C --> Y
+    A --> C
+    B --> C
+    B --> Y
+")
+```
+
+We're saying that changing $X$ will induce some change in $Y$; changing $Y$, 
+however, will not impact $X$. And we make no assumptions about the *nature* of the
+relationship (eg, whether it is linear). The goal is to see what insight can be gleaned
+with these relatively few assumptions, before making more assumptions about functional
+relationships (which affords much more scientific power), and indeed DAGs are a good 
+precursor to more specific process models.
+
+25 min

@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Hello bookdown | Statistical Rethinking Notes</title>
+  <title>Chapter 2 Small Worlds and Large Worlds | Statistical Rethinking Notes</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.36 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Hello bookdown | Statistical Rethinking Notes" />
+  <meta property="og:title" content="Chapter 2 Small Worlds and Large Worlds | Statistical Rethinking Notes" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Hello bookdown | Statistical Rethinking Notes" />
+  <meta name="twitter:title" content="Chapter 2 Small Worlds and Large Worlds | Statistical Rethinking Notes" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -58,14 +58,6 @@ set in the _output.yml file.</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
-<script src="libs/d3-3.3.8/d3.min.js"></script>
-<script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
-<link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
-<script src="libs/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
-<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-<script src="libs/chromatography-0.1/chromatography.js"></script>
-<script src="libs/DiagrammeR-binding-1.0.10/DiagrammeR.js"></script>
 
 
 
@@ -90,19 +82,16 @@ set in the _output.yml file.</p>" />
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> The Golem of Prague</a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like https://bookdown.org/yihui/bookdown</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#lecture-notes"><i class="fa fa-check"></i><b>1.1</b> Lecture notes</a>
 <ul>
 <li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#what-is-causal-inference"><i class="fa fa-check"></i><b>1.1.1</b> What is causal inference?</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="hello-bookdown.html"><a href="hello-bookdown.html"><i class="fa fa-check"></i><b>2</b> Hello bookdown</a>
+<li class="chapter" data-level="2" data-path="small-worlds-and-large-worlds.html"><a href="small-worlds-and-large-worlds.html"><i class="fa fa-check"></i><b>2</b> Small Worlds and Large Worlds</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="hello-bookdown.html"><a href="hello-bookdown.html#a-section"><i class="fa fa-check"></i><b>2.1</b> A section</a>
-<ul>
-<li class="chapter" data-level="" data-path="hello-bookdown.html"><a href="hello-bookdown.html#an-unnumbered-section"><i class="fa fa-check"></i>An unnumbered section</a></li>
-</ul></li>
+<li class="chapter" data-level="2.1" data-path="small-worlds-and-large-worlds.html"><a href="small-worlds-and-large-worlds.html#the-garden-of-forking-data"><i class="fa fa-check"></i><b>2.1</b> The garden of forking data</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -124,17 +113,27 @@ set in the _output.yml file.</p>" />
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="hello-bookdown" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Hello bookdown<a href="hello-bookdown.html#hello-bookdown" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (<code>#</code>) per .Rmd file.</p>
-<div id="a-section" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> A section<a href="hello-bookdown.html#a-section" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>All chapter sections start with a second-level (<code>##</code>) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.</p>
-<div id="an-unnumbered-section" class="section level3 unnumbered hasAnchor">
-<h3>An unnumbered section<a href="hello-bookdown.html#an-unnumbered-section" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Chapters and sections are numbered by default. To un-number a heading, add a <code>{.unnumbered}</code> or the shorter <code>{-}</code> at the end of the heading, like in this section.</p>
+<div id="small-worlds-and-large-worlds" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Small Worlds and Large Worlds<a href="small-worlds-and-large-worlds.html#small-worlds-and-large-worlds" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>He opens the chapter by using the example of Christopher Columbus to illustrate
+the difference between our ideas (Columbus thinking the world was small enough to sail to Asia)
+and reality (Columbus landing in the Western hemisphere).</p>
+<p>A <strong>small world</strong> is a self-contained logical model of the world. We need to be
+able to verify the model’s logic, ensuring it performs as expected under favorable conditions.
+He says Bayesian models have reasonable claims to optimality: no model could make better
+use of the data, assuming the model of reality is an accurate description.</p>
+<p>The <strong>large world</strong> is the broader context in which the model is deployed. The broader
+context often presents surprises. And the small world is always an imperfect representation
+of the larger world.</p>
+<p><strong>Aims of the chapter.</strong> Here we’re concerned with the small world. We’ll focus
+on probability theory, then see how Bayesian inferences arises naturally from this
+perspective. We then see Bayesian statistical models; then how to animate the model
+to produce estimates.</p>
+<p><em>A short note about how real organisms use heuristics as adaptive shortcuts and
+aren’t fully “Bayesian” in their logic; nor should they be.</em></p>
+<div id="the-garden-of-forking-data" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> The garden of forking data<a href="small-worlds-and-large-worlds.html#the-garden-of-forking-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
-</div>
 </div>
 </div>
             </section>
@@ -197,20 +196,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>

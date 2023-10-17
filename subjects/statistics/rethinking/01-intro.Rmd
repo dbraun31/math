@@ -1,11 +1,24 @@
-# Hello bookdown 
+# Small Worlds and Large Worlds
 
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (`#`) per .Rmd file.
+He opens the chapter by using the example of Christopher Columbus to illustrate
+the difference between our ideas (Columbus thinking the world was small enough to sail to Asia)
+and reality (Columbus landing in the Western hemisphere).
 
-## A section
+A **small world** is a self-contained logical model of the world. We need to be 
+able to verify the model's logic, ensuring it performs as expected under favorable conditions. 
+He says Bayesian models have reasonable claims to optimality: no model could make better 
+use of the data, assuming the model of reality is an accurate description.
 
-All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+The **large world** is the broader context in which the model is deployed. The broader
+context often presents surprises. And the small world is always an imperfect representation
+of the larger world.
 
-### An unnumbered section {-}
+**Aims of the chapter.** Here we're concerned with the small world. We'll focus
+on probability theory, then see how Bayesian inferences arises naturally from this 
+perspective. We then see Bayesian statistical models; then how to animate the model
+to produce estimates.
 
-Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
+*A short note about how real organisms use heuristics as adaptive shortcuts and
+aren't fully "Bayesian" in their logic; nor should they be.*
+
+## The garden of forking data

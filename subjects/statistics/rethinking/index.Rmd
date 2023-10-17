@@ -88,4 +88,33 @@ with these relatively few assumptions, before making more assumptions about func
 relationships (which affords much more scientific power), and indeed DAGs are a good 
 precursor to more specific process models.
 
-25 min
+**Interim summary**
+I think a major point here is that null hypothesis rejection is often insufficient because researchers
+fail to consider other possible accounts that could explain the same pattern of results.
+He goes through many examples of this. To support one hypothesis, one needs to 
+draft process models of both the main hypothesis and competing hypotheses, which
+will force researchers to make many assumptions, and will reveal where hypotheses
+make overlapping and diverging predictions.
+
+**Looking forward**
+
+* Research requires more than just null hypothesis testing.
+* We need generative causal models
+    * Start with DAGs but need to go beyond. We need a model that data can be simulated from.
+* Then write statistical models
+    * First analyze synthetic data to make sure important questions can be answered
+    * Then introduce real data to the model / statistical test
+    
+YES! This guy is speaking my language!
+
+Bayes might be perceived as overkill sometimes, but, for testing predictions from 
+generative models, Bayes is extremely well equipped to handle many of the challenges
+that come up from routine issues in data.
+
+Steps:
+
+1. Theoretical estimand
+2. Scientific (causal) model(s)
+3. Use 1 & 2 to build statistical model(s)
+4. Simulate from 2 to validate 3 yields 1
+5. Analyze real data

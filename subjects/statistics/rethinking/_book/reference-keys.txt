@@ -1,9 +1,7 @@
 the-golem-of-prague
-usage
-render-book
-preview-book
-hello-bookdown
-a-section
 lecture-notes
 what-is-causal-inference
 directed-acyclic-graphs-dags
+small-worlds-and-large-worlds
+the-garden-of-forking-data
+url-your-book-url-like-httpsbookdown.orgyihuibookdown

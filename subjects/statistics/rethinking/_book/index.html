@@ -8,7 +8,7 @@
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
-  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.36 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Statistical Rethinking Notes" />
   <meta property="og:type" content="book" />
@@ -29,7 +29,7 @@ set in the _output.yml file.</p>" />
 <meta name="author" content="Dave Braun" />
 
 
-<meta name="date" content="2023-09-26" />
+<meta name="date" content="2023-10-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -37,7 +37,7 @@ set in the _output.yml file.</p>" />
   
   
 
-<link rel="next" href="hello-bookdown.html"/>
+<link rel="next" href="small-worlds-and-large-worlds.html"/>
 <script src="libs/jquery-3.6.1/jquery-3.6.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -97,12 +97,9 @@ set in the _output.yml file.</p>" />
 <li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#what-is-causal-inference"><i class="fa fa-check"></i><b>1.1.1</b> What is causal inference?</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="hello-bookdown.html"><a href="hello-bookdown.html"><i class="fa fa-check"></i><b>2</b> Hello bookdown</a>
+<li class="chapter" data-level="2" data-path="small-worlds-and-large-worlds.html"><a href="small-worlds-and-large-worlds.html"><i class="fa fa-check"></i><b>2</b> Small Worlds and Large Worlds</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="hello-bookdown.html"><a href="hello-bookdown.html#a-section"><i class="fa fa-check"></i><b>2.1</b> A section</a>
-<ul>
-<li class="chapter" data-level="" data-path="hello-bookdown.html"><a href="hello-bookdown.html#an-unnumbered-section"><i class="fa fa-check"></i>An unnumbered section</a></li>
-</ul></li>
+<li class="chapter" data-level="2.1" data-path="small-worlds-and-large-worlds.html"><a href="small-worlds-and-large-worlds.html#the-garden-of-forking-data"><i class="fa fa-check"></i><b>2.1</b> The garden of forking data</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -127,7 +124,7 @@ set in the _output.yml file.</p>" />
 <div id="header">
 <h1 class="title">Statistical Rethinking Notes</h1>
 <p class="author"><em>Dave Braun</em></p>
-<p class="date"><em>2023-09-26</em></p>
+<p class="date"><em>2023-10-17</em></p>
 </div>
 <div id="the-golem-of-prague" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">Chapter 1</span> The Golem of Prague<a href="index.html#the-golem-of-prague" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -169,15 +166,46 @@ consider factors that might have caused the sample to be the way that it is.</p>
 <div id="directed-acyclic-graphs-dags" class="section level4 hasAnchor" number="1.1.1.1">
 <h4><span class="header-section-number">1.1.1.1</span> Directed acyclic graphs (DAGs)<a href="index.html#directed-acyclic-graphs-dags" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>These are essentially box-and-arrow causal models of a process.</p>
-<div class="DiagrammeR html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-e5d6e18b1cf3b354398a" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-e5d6e18b1cf3b354398a">{"x":{"diagram":"\n    graph LR\n    \n    X --> Y\n    A --> X\n    C --> X\n    C --> Y\n    A --> C\n    B --> C\n    B --> Y\n"},"evals":[],"jsHooks":[]}</script>
+<div class="DiagrammeR html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-59db87b24f7d9029f4d4" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-59db87b24f7d9029f4d4">{"x":{"diagram":"\n    graph LR\n    \n    X --> Y\n    A --> X\n    C --> X\n    C --> Y\n    A --> C\n    B --> C\n    B --> Y\n"},"evals":[],"jsHooks":[]}</script>
 <p>We’re saying that changing <span class="math inline">\(X\)</span> will induce some change in <span class="math inline">\(Y\)</span>; changing <span class="math inline">\(Y\)</span>,
 however, will not impact <span class="math inline">\(X\)</span>. And we make no assumptions about the <em>nature</em> of the
 relationship (eg, whether it is linear). The goal is to see what insight can be gleaned
 with these relatively few assumptions, before making more assumptions about functional
 relationships (which affords much more scientific power), and indeed DAGs are a good
 precursor to more specific process models.</p>
-<p>25 min</p>
+<p><strong>Interim summary</strong>
+I think a major point here is that null hypothesis rejection is often insufficient because researchers
+fail to consider other possible accounts that could explain the same pattern of results.
+He goes through many examples of this. To support one hypothesis, one needs to
+draft process models of both the main hypothesis and competing hypotheses, which
+will force researchers to make many assumptions, and will reveal where hypotheses
+make overlapping and diverging predictions.</p>
+<p><strong>Looking forward</strong></p>
+<ul>
+<li>Research requires more than just null hypothesis testing.</li>
+<li>We need generative causal models
+<ul>
+<li>Start with DAGs but need to go beyond. We need a model that data can be simulated from.</li>
+</ul></li>
+<li>Then write statistical models
+<ul>
+<li>First analyze synthetic data to make sure important questions can be answered</li>
+<li>Then introduce real data to the model / statistical test</li>
+</ul></li>
+</ul>
+<p>YES! This guy is speaking my language!</p>
+<p>Bayes might be perceived as overkill sometimes, but, for testing predictions from
+generative models, Bayes is extremely well equipped to handle many of the challenges
+that come up from routine issues in data.</p>
+<p>Steps:</p>
+<ol style="list-style-type: decimal">
+<li>Theoretical estimand</li>
+<li>Scientific (causal) model(s)</li>
+<li>Use 1 &amp; 2 to build statistical model(s)</li>
+<li>Simulate from 2 to validate 3 yields 1</li>
+<li>Analyze real data</li>
+</ol>
 
 </div>
 </div>
@@ -189,7 +217,7 @@ precursor to more specific process models.</p>
         </div>
       </div>
 
-<a href="hello-bookdown.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="small-worlds-and-large-worlds.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -5,3 +5,5 @@ directed-acyclic-graphs-dags
 small-worlds-and-large-worlds
 the-garden-of-forking-data
 url-your-book-url-like-httpsbookdown.orgyihuibookdown
+counting-possibilities
+combining-other-information

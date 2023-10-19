@@ -29,7 +29,7 @@ set in the _output.yml file.</p>" />
 <meta name="author" content="Dave Braun" />
 
 
-<meta name="date" content="2023-10-17" />
+<meta name="date" content="2023-10-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -91,7 +91,11 @@ set in the _output.yml file.</p>" />
 </ul></li>
 <li class="chapter" data-level="2" data-path="small-worlds-and-large-worlds.html"><a href="small-worlds-and-large-worlds.html"><i class="fa fa-check"></i><b>2</b> Small Worlds and Large Worlds</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="small-worlds-and-large-worlds.html"><a href="small-worlds-and-large-worlds.html#the-garden-of-forking-data"><i class="fa fa-check"></i><b>2.1</b> The garden of forking data</a></li>
+<li class="chapter" data-level="2.1" data-path="small-worlds-and-large-worlds.html"><a href="small-worlds-and-large-worlds.html#the-garden-of-forking-data"><i class="fa fa-check"></i><b>2.1</b> The garden of forking data</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="small-worlds-and-large-worlds.html"><a href="small-worlds-and-large-worlds.html#counting-possibilities"><i class="fa fa-check"></i><b>2.1.1</b> Counting possibilities</a></li>
+<li class="chapter" data-level="2.1.2" data-path="small-worlds-and-large-worlds.html"><a href="small-worlds-and-large-worlds.html#combining-other-information"><i class="fa fa-check"></i><b>2.1.2</b> Combining other information</a></li>
+</ul></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -133,8 +137,154 @@ to produce estimates.</p>
 aren’t fully “Bayesian” in their logic; nor should they be.</em></p>
 <div id="the-garden-of-forking-data" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> The garden of forking data<a href="small-worlds-and-large-worlds.html#the-garden-of-forking-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The image is one where many roads branch off into all possibilities. In order
+to make good inference about what actually happened, we need to consider everything
+that could’ve happened. As we learn about what actually happened, some of the hypothetical
+possibilities are pruned. <strong>We arrive at a quantitative ranking of hypotheses.</strong>
+This approach guarantees the best <em>small world</em> solution (although not necessarily
+the best big world solution).</p>
+<p>Example:</p>
+<div id="counting-possibilities" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Counting possibilities<a href="small-worlds-and-large-worlds.html#counting-possibilities" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A bag contains four marbles, either blue or white. The bag is sampled <em>with</em>
+replacement N times. Each possible state (of which there are five) of the true
+count of blue / white marbles will be referred to as the five <em>conjectures</em>.
+We need to figure out which conjecture is most plausible.</p>
+<p>We start with N = 3, and observe blue, white, blue. These are the data.</p>
+<p>Now we start with the conjecture that the bag actually contains blue, white,
+white, white, and we visualize (just look at figures starting on p. 21; I
+won’t try to bring them in here). But basically we chart out all possible
+draws that could have happened on the first draw for our given conjecture,
+which again is one blue and three white. Then from each of those endpoints,
+we again chart all possibilities for the outcome of the <em>second</em> draw, and so forth,
+until we arrive at a big forking garden. Any pathway through the garden that
+violates our observation (such as all white or all blue) can be eliminated. Ah,
+and additionally, the sequence of the paths matter, such that the first element
+in the path has to match the first observation, and so on. So, in the first layer,
+we actually eliminate all the white marbles. We’re not concerned with which exact
+path the data took, we’re only concerned with how many plausible pathways remain
+for that given conjecture.</p>
+<p>We then repeat the same procedure for the remaining conjectures. The all white
+and all blue conjectures are easy—they get fully eliminated. So we’re really
+doing a counting comparison on the remaining three (including the one we walked
+through above). We tally up the valid pathways:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Conjecture</th>
+<th align="center">Ways to produce</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Four white</td>
+<td align="center"><span class="math inline">\(0 \times 4 \times 0 = 0\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">One blue</td>
+<td align="center"><span class="math inline">\(1 \times 3 \times 1 = 3\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">Two blue</td>
+<td align="center"><span class="math inline">\(2 \times 2 \times 2 = 8\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">Three blue</td>
+<td align="center"><span class="math inline">\(3 \times 1 \times 3 = 9\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">Four blue</td>
+<td align="center"><span class="math inline">\(4 \times 0 \times 4\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The math trick here is just to take the number of possibilities in each layer
+and multiply them together (same thing as counting).</p>
+<p>These counts are only part of the solution to rate the relative plausibility of
+each conjecture. But we also need to know how many ways each conjecture itself
+could be realized.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+</div>
+<div id="combining-other-information" class="section level3 hasAnchor" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Combining other information<a href="small-worlds-and-large-worlds.html#combining-other-information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This is all about priors. We could have some background knowledge about the
+relative plausibility of the conjectures (ie, how many of which type of marbles
+are in the bag).</p>
+<p>So we can imagine that we do the full procedure above and arrive at the counts
+in the table. And then we want to repeat that procedure. There’s no sense
+throwing out the past data we’ve collected about what’s in the bag; instead,
+we combine that information with our new observations to determine the
+plausibility of the conjectures.</p>
+<p>So we repeat the procedure for this new round of data collection (assuming
+these draws are each independent from each other and from the previous round
+of data collection). We arrive at our counts once again, and this time we
+multiply the new counts by the old counts to arrive at a new plausibility estimate.</p>
+<p>Example if one new observation was a blue marble:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Conjecture</th>
+<th align="center">Ways to produce</th>
+<th align="center">Prior counts</th>
+<th align="center">New count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Four white</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center"><span class="math inline">\(0 \times 0 = 0\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">One blue</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center"><span class="math inline">\(3 \times 1 = 3\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">Two blue</td>
+<td align="center">2</td>
+<td align="center">8</td>
+<td align="center"><span class="math inline">\(2 \times 8 = 16\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">Three blue</td>
+<td align="center">3</td>
+<td align="center">9</td>
+<td align="center"><span class="math inline">\(3 \times 9 = 18\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center">Four blue</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center"><span class="math inline">\(0 \times 4 = 0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Multiplication here again is just a shortcut for adding up all the total valid
+“pathways through the garden” for that conjecture.</p>
+<p><em>My note:</em> Then <em>I think</em> what you do is turn the new counts into a probability
+distribution by dividing by the “probability of the data”; in this case, the sum
+of all counts (eg, for two blue: <span class="math inline">\(16 / (0 + 3 + 16 + 18 + 0) = 0.432\)</span>). And I guess
+that’s (at least for discrete events) the marginal probability.</p>
+<p>p. 27</p>
 
 </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>He’s obviously talking about priors here, but it’s not yet totally clear
+to me how that applies in this situation. Ah, introduce the next section…<a href="small-worlds-and-large-worlds.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
@@ -173,7 +323,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-intro.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-forking-data.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -196,6 +346,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
